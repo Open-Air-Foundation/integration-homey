@@ -1,13 +1,5 @@
-import Homey from 'homey';
-import SharedDevice from '../../lib/shared_device'
-
-class OutdoorDevice extends SharedDevice {
-
-  async onInit() {
-    super.onInit();
-    this.log('OutdoorDevice has been initialized');
-  }
-
-}
-
-module.exports = OutdoorDevice;
+/**
+ * Homey resolves the device class from this folder.
+ * Legacy paired devices keep this driver id; the implementation is the shared local device.
+ */
+module.exports = require('../../lib/local/device');

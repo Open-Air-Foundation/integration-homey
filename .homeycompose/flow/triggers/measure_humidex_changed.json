@@ -1,0 +1,63 @@
+{
+  "id": "measure_humidex_changed",
+  "platforms": [
+    "local",
+    "cloud"
+  ],
+  "title": {
+    "en": "The Humidex value has changed",
+    "nl": "De Humidex-waarde is veranderd",
+    "da": "Humidex-værdien er ændret",
+    "de": "Der Humidex-Wert hat sich geändert",
+    "es": "El valor de Humidex ha cambiado",
+    "fr": "La valeur Humidex a changé",
+    "it": "Il valore Humidex è cambiato",
+    "no": "Humidex-verdien har endret seg",
+    "sv": "Humidex-värdet har ändrats",
+    "pl": "Wartość Humidex uległa zmianie",
+    "ru": "Значение Humidex изменилось",
+    "ko": "휴미덱스 값이 변경되었습니다"
+  },
+  "titleFormatted": {
+    "en": "The Humidex value has changed",
+    "nl": "De Humidex-waarde is veranderd",
+    "da": "Humidex-værdien er ændret",
+    "de": "Der Humidex-Wert hat sich geändert",
+    "es": "El valor de Humidex ha cambiado",
+    "fr": "La valeur Humidex a changé",
+    "it": "Il valore Humidex è cambiato",
+    "no": "Humidex-verdien har endret seg",
+    "sv": "Humidex-värdet har ändrats",
+    "pl": "Wartość Humidex uległa zmianie",
+    "ru": "Значение Humidex изменилось",
+    "ko": "휴미덱스 값이 변경되었습니다"
+  },
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "filter": "driver_id=indoor-local|outdoor-local|indoor-cloud|outdoor-cloud&capabilities=measure_humidex"
+    }
+  ],
+  "tokens": [
+    {
+      "name": "measure_humidex",
+      "title": {
+        "en": "Humidex",
+        "nl": "Humidex",
+        "da": "Humidex",
+        "de": "Humidex",
+        "es": "Humidex",
+        "fr": "Humidex",
+        "it": "Humidex",
+        "no": "Humidex",
+        "sv": "Humidex",
+        "pl": "Humidex",
+        "ru": "Хумидекс",
+        "ko": "휴미덱스"
+      },
+      "type": "number",
+      "example": 32.1
+    }
+  ]
+}

@@ -1,11 +1,95 @@
 {
-  "device": {
-      "save": "Создать устройство",
-      "saving": "Проверка устройства",
-      "failed": "Проверка устройства не удалась",
-      "create": "Подключиться к устройству AirGradient",
-      "ipAddress": "IP-адрес устройства",
-      "ipAddressHelp": "Это уникальный IP-адрес вашего устройства AirGradient.",
-      "ipAddressRequired": "Пожалуйста, укажите IP-адрес вашего устройства AirGradient."
-  }
+    "device": {
+        "save": "Создать устройство",
+        "saving": "Проверка устройства",
+        "failed": "Проверка устройства не удалась",
+        "create": "Подключиться к устройству AirGradient",
+        "ipAddress": "IP-адрес устройства",
+        "ipAddressHelp": "Это уникальный IP-адрес вашего устройства AirGradient.",
+        "ipAddressRequired": "Пожалуйста, укажите IP-адрес вашего устройства AirGradient.",
+        "pair": {
+            "list": {
+                "add_by_ip": "Добавить по IP…"
+            },
+            "device_ip": {
+                "title": "Подключите устройство AirGradient",
+                "addressLabel": "IP-адрес или имя хоста",
+                "addressPlaceholder": "192.168.0.1 или airgradient.local",
+                "connect": "Подключить"
+            },
+            "apikey": {
+                "title": "Подключите устройство AirGradient",
+                "intro": "Чтобы подключить AirGradient через облачный API, нужен API-токен места (place).",
+                "tokenLabel": "API-токен",
+                "continue": "Продолжить",
+                "stepOpen": "Откройте <a id=\"ag-link\" href=\"javascript:void(0);\" target=\"_blank\">AirGradient Dashboard</a>.",
+                "stepSettings": "Откройте <strong>General Settings</strong> → <strong>Connectivity</strong>.",
+                "stepToken": "Включите <strong>API access</strong>, скопируйте токен и вставьте его ниже."
+            }
+        },
+        "repair": {
+            "device_ip": {
+                "title": "Исправить устройство",
+                "serialLabel": "Серийный номер",
+                "serialPlaceholder": "Загрузка...",
+                "addressLabel": "IP-адрес или имя хоста",
+                "addressPlaceholder": "192.168.0.1 или airgradient.local",
+                "connect": "Подключить",
+                "errorRetrievingSerial": "Ошибка получения серийного номера"
+            },
+            "apikey": {
+                "title": "Восстановить устройство"
+            }
+        }
+    },
+    "errors": {
+        "deviceUnreachableAt": "Устройство недоступно по адресу __ipAddress__",
+        "setDeviceConfigFailed": "Не удалось обновить конфигурацию устройства AirGradient.",
+        "cloudTokenNotConfigured": "Токен облачного API не настроен для этого места.",
+        "cloudUnreachable": "Облачный API AirGradient недоступен.",
+        "co2CalibrationNoToken": "Токен облачного API не настроен; невозможно запустить калибровку CO₂.",
+        "co2CalibrationFailed": "Не удалось запустить калибровку CO₂ через облачный API AirGradient.",
+        "co2CalibrationInProgress": "Для этого устройства недавно была запрошена калибровка CO₂. Подождите примерно __minutes__ мин. перед повторной попыткой.",
+        "ledBarTestFailed": "Не удалось запустить тест LED-полосы на этом устройстве.",
+        "tokenNotValidated": "Токен API ещё не проверен.",
+        "tokenRequired": "Требуется токен API.",
+        "tokenInvalid": "Неверный токен API или не удалось определить место.",
+        "noLocations": "Для этого токена API не найдено ни одного местоположения.",
+        "deviceNotFound": "Не удалось подключиться к устройству AirGradient по этому адресу.",
+        "wrongDevice": "Введённый адрес принадлежит другому устройству AirGradient.",
+        "cloudTokenRejected": "Токен API AirGradient отклонён. Используйте «Восстановить», чтобы ввести новый.",
+        "tokenPlaceMismatch": "Этот токен API относится к месту, в котором нет этого устройства."
+    },
+    "notifications": {
+        "driver_deprecated": "Driver для __device__ устарел. Удалите это устройство и добавьте его снова, чтобы оно использовало новый driver.",
+        "co2_calibration_started": "Калибровка CO₂ запущена на __device__. Показания должны стабилизироваться около 400 ppm примерно за 10 минут.",
+        "co2_calibration_finished": "Калибровка CO₂ на __device__ должна быть завершена. Монитор должен показывать около 400 ppm.",
+        "metrics": {
+            "pm1": "PM1",
+            "pm25": "PM2.5",
+            "pm10": "PM10",
+            "tvoc": "TVOC",
+            "nox": "NOx",
+            "co2": "CO₂",
+            "humidex": "Хумидекс",
+            "aqi": "AQI",
+            "go_iaqs": "GO IAQS"
+        },
+        "levels": {
+            "low": "Низкий",
+            "medium": "Средний",
+            "high": "Высокий",
+            "critical": "Критический",
+            "good": "Хороший",
+            "moderate": "Умеренный",
+            "unhealthy_sensitive": "Вредно для чувствительных групп",
+            "unhealthy": "Вредный",
+            "very_unhealthy": "Очень вредный",
+            "hazardous": "Опасный",
+            "little_discomfort": "Небольшой дискомфорт",
+            "some_discomfort": "Некоторый дискомфорт",
+            "great_discomfort": "Сильный дискомфорт",
+            "dangerous": "Опасно"
+        }
+    }
 }

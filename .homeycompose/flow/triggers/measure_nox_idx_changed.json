@@ -1,5 +1,9 @@
 {
   "id": "measure_nox_idx_changed",
+  "platforms": [
+    "local",
+    "cloud"
+  ],
   "title": {
     "en": "The NOx Index value has changed",
     "nl": "De NOx indexwaarde is gewijzigd",
@@ -32,7 +36,7 @@
     {
       "type": "device",
       "name": "device",
-      "filter": "driver_id=indoor|outdoor"
+      "filter": "driver_id=indoor|outdoor|indoor-local|outdoor-local|indoor-cloud|outdoor-cloud&capabilities=measure_nox_idx"
     }
   ],
   "tokens": [

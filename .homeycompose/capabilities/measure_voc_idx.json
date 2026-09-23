@@ -33,5 +33,5 @@
   "setable": false,
   "insights": true,
   "uiComponent": "sensor",
-  "icon": "./assets/measure_tvoc.svg"
+  "icon": "/assets/capabilities/measure_voc_idx.svg"
 }

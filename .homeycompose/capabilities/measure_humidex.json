@@ -1,0 +1,37 @@
+{
+  "type": "number",
+  "title": {
+    "en": "Humidex",
+    "nl": "Humidex",
+    "da": "Humidex",
+    "de": "Humidex",
+    "es": "Humidex",
+    "fr": "Humidex",
+    "it": "Humidex",
+    "no": "Humidex",
+    "sv": "Humidex",
+    "pl": "Humidex",
+    "ru": "Хумидекс",
+    "ko": "휴미덱스"
+  },
+  "units": {
+    "en": "°C",
+    "nl": "°C",
+    "da": "°C",
+    "de": "°C",
+    "es": "°C",
+    "fr": "°C",
+    "it": "°C",
+    "no": "°C",
+    "sv": "°C",
+    "pl": "°C",
+    "ru": "°C",
+    "ko": "°C"
+  },
+  "decimals": 1,
+  "getable": true,
+  "setable": false,
+  "insights": true,
+  "uiComponent": "sensor",
+  "icon": "/assets/capabilities/measure_humidex.svg"
+}

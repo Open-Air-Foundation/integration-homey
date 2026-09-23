@@ -1,0 +1,63 @@
+{
+  "id": "measure_go_iaqs_score_changed",
+  "platforms": [
+    "local",
+    "cloud"
+  ],
+  "title": {
+    "en": "The GO IAQS Score has changed",
+    "nl": "De GO IAQS-score is veranderd",
+    "da": "GO IAQS-scoren er ændret",
+    "de": "Der GO-IAQS-Score hat sich geändert",
+    "es": "La puntuación GO IAQS ha cambiado",
+    "fr": "Le score GO IAQS a changé",
+    "it": "Il punteggio GO IAQS è cambiato",
+    "no": "GO IAQS-scoren har endret seg",
+    "sv": "GO IAQS-poängen har ändrats",
+    "pl": "Wynik GO IAQS uległ zmianie",
+    "ru": "Оценка GO IAQS изменилась",
+    "ko": "GO IAQS 점수가 변경되었습니다"
+  },
+  "titleFormatted": {
+    "en": "The GO IAQS Score has changed",
+    "nl": "De GO IAQS-score is veranderd",
+    "da": "GO IAQS-scoren er ændret",
+    "de": "Der GO-IAQS-Score hat sich geändert",
+    "es": "La puntuación GO IAQS ha cambiado",
+    "fr": "Le score GO IAQS a changé",
+    "it": "Il punteggio GO IAQS è cambiato",
+    "no": "GO IAQS-scoren har endret seg",
+    "sv": "GO IAQS-poängen har ändrats",
+    "pl": "Wynik GO IAQS uległ zmianie",
+    "ru": "Оценка GO IAQS изменилась",
+    "ko": "GO IAQS 점수가 변경되었습니다"
+  },
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "filter": "driver_id=indoor-local|indoor-cloud&capabilities=measure_go_iaqs_score"
+    }
+  ],
+  "tokens": [
+    {
+      "name": "measure_go_iaqs_score",
+      "title": {
+        "en": "GO IAQS Score",
+        "nl": "GO IAQS-score",
+        "da": "GO IAQS-score",
+        "de": "GO-IAQS-Score",
+        "es": "Puntuación GO IAQS",
+        "fr": "Score GO IAQS",
+        "it": "Punteggio GO IAQS",
+        "no": "GO IAQS-score",
+        "sv": "GO IAQS-poäng",
+        "pl": "Wynik GO IAQS",
+        "ru": "Оценка GO IAQS",
+        "ko": "GO IAQS 점수"
+      },
+      "type": "number",
+      "example": 8
+    }
+  ]
+}

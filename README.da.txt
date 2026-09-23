@@ -1,7 +1,5 @@
-AirGradient
-Slut dig til os i kampen mod luftforurening
-Syv millioner mennesker dør hvert år på grund af luftforurening. Overvågning af luftkvalitet gør det muligt for folk verden over at beskytte sig selv bedre.
+Syv millioner mennesker dør hvert år på grund af luftforurening. Ved at måle luftkvaliteten kan folk verden over beskytte sig bedre.
 
-Vi har en mission om at bringe nøjagtig og overkommelig overvågning af luftkvalitet til alle hjørner af planeten, og vi får støtte af et fællesskab på mere end 10.000 engagerede borgere, der allerede har installeret en AirGradient monitor.
+Vores mission er at gøre det muligt at måle luftkvaliteten nøjagtigt og til en overkommelig pris i hele verden. Vi støttes af et fællesskab på mere end 10.000 engagerede mennesker, der allerede har installeret en AirGradient-monitor.
 
-For at maksimere vores indflydelse har vi fuldstændigt open-source'et og delt vores monitor design, så andre kan bygge videre på det.
+For at gøre den størst mulige forskel har vi udgivet monitordesignet som åben kildekode, så andre kan bygge videre på det.

@@ -1,7 +1,5 @@
-AirGradient
-Doe Mee In De Strijd Tegen Luchtvervuiling
-Zeven miljoen mensen sterven elk jaar door luchtvervuiling. Het monitoren van de luchtkwaliteit stelt mensen wereldwijd in staat zichzelf beter te beschermen.
+Elk jaar sterven zeven miljoen mensen door luchtvervuiling. Door de luchtkwaliteit te meten, kunnen mensen over de hele wereld zich beter beschermen.
 
-Wij hebben de missie om nauwkeurige en betaalbare luchtkwaliteitsmonitoring naar elke hoek van de planeet te brengen en we worden ondersteund door een gemeenschap van meer dan 10.000 betrokken burgers die al een AirGradient-monitor hebben geïnstalleerd.
+Het is onze missie om een nauwkeurige en betaalbare meting van de luchtkwaliteit overal ter wereld mogelijk te maken. We worden gesteund door een gemeenschap van meer dan 10.000 betrokken mensen die al een AirGradient-monitor hebben geïnstalleerd.
 
-Om onze impact te maximaliseren, hebben we ons monitordesign volledig open-source gemaakt en gedeeld zodat anderen erop kunnen voortbouwen.
+Om zoveel mogelijk verschil te maken, hebben we het ontwerp van onze monitor volledig open source gemaakt, zodat anderen erop kunnen voortbouwen.

@@ -19,5 +19,5 @@
   "setable": false,
   "insights": true,
   "uiComponent": "sensor",
-  "icon": "./assets/measure_pm0.3.svg"
+  "icon": "/assets/capabilities/measure_pm03_cnt.svg"
 }

@@ -33,7 +33,21 @@
           "ru": "IP адрес",
           "ko": "IP 주소"
         },
-        "value": ""
+        "value": "",
+        "hint": {
+          "en": "The IP address of your AirGradient monitor on the local network.",
+          "nl": "Het IP-adres van je AirGradient-monitor op het lokale netwerk.",
+          "da": "IP-adressen på din AirGradient-monitor på det lokale netværk.",
+          "de": "Die IP-Adresse deines AirGradient-Monitors im lokalen Netzwerk.",
+          "es": "La dirección IP de tu monitor AirGradient en la red local.",
+          "fr": "L'adresse IP de ton moniteur AirGradient sur le réseau local.",
+          "it": "L'indirizzo IP del monitor AirGradient sulla rete locale.",
+          "no": "IP-adressen til AirGradient-monitoren på det lokale nettverket.",
+          "sv": "IP-adressen till din AirGradient-monitor på det lokala nätverket.",
+          "pl": "Adres IP monitora AirGradient w sieci lokalnej.",
+          "ru": "IP-адрес монитора AirGradient в локальной сети.",
+          "ko": "로컬 네트워크에서 AirGradient 모니터의 IP 주소입니다."
+        }
       },
       {
         "id": "pollingInterval",
@@ -139,7 +153,21 @@
               "ko": "5분"
             }
           }
-        ]
+        ],
+        "hint": {
+          "en": "How often Homey polls the monitor for new measurements. Shorter intervals provide fresher data but increase network traffic.",
+          "nl": "Hoe vaak Homey de monitor bevraagt voor nieuwe metingen. Kortere intervallen geven actuelere data, maar verhogen het netwerkverkeer.",
+          "da": "Hvor ofte Homey henter nye målinger fra monitoren. Kortere intervaller giver friskere data, men øger netværkstrafikken.",
+          "de": "Wie oft Homey den Monitor nach neuen Messwerten abfragt. Kürzere Intervalle liefern aktuellere Daten, erhöhen aber den Netzwerkverkehr.",
+          "es": "Con qué frecuencia Homey consulta el monitor para obtener nuevas mediciones. Intervalos más cortos ofrecen datos más recientes, pero aumentan el tráfico de red.",
+          "fr": "Fréquence à laquelle Homey interroge le moniteur pour de nouvelles mesures. Des intervalles plus courts donnent des données plus récentes, mais augmentent le trafic réseau.",
+          "it": "Frequenza con cui Homey interroga il monitor per nuove misurazioni. Intervalli più brevi forniscono dati più aggiornati, ma aumentano il traffico di rete.",
+          "no": "Hvor ofte Homey henter nye målinger fra monitoren. Kortere intervaller gir ferskere data, men øker nettverkstrafikken.",
+          "sv": "Hur ofta Homey hämtar nya mätningar från monitorn. Kortare intervall ger färskare data men ökar nätverkstrafiken.",
+          "pl": "Jak często Homey odpytuje monitor o nowe pomiary. Krótsze interwały dają świeższe dane, ale zwiększają ruch sieciowy.",
+          "ru": "Как часто Homey опрашивает монитор для получения новых измерений. Более короткие интервалы дают более свежие данные, но увеличивают сетевой трафик.",
+          "ko": "Homey가 모니터에서 새 측정값을 가져오는 주기입니다. 간격이 짧을수록 최신 데이터를 제공하지만 네트워크 트래픽이 증가합니다."
+        }
       },
       {
         "id": "postDataToAirGradient",
@@ -147,7 +175,7 @@
         "value": true,
         "label": {
           "en": "Post Data To AirGradient",
-          "nl": "Post gegevens naar AirGradient",
+          "nl": "Gegevens naar AirGradient sturen",
           "da": "Post data til AirGradient",
           "de": "Daten an AirGradient senden",
           "es": "Enviar datos a AirGradient",
@@ -158,6 +186,20 @@
           "pl": "Wyślij dane do AirGradient",
           "ru": "Отправить данные в AirGradient",
           "ko": "AirGradient에 데이터 전송"
+        },
+        "hint": {
+          "en": "When enabled, the monitor sends measurement data to the AirGradient cloud for dashboards and data export. Disable for purely local operation.",
+          "nl": "Als dit is ingeschakeld, stuurt de monitor meetgegevens naar de AirGradient-cloud voor dashboards en data-export. Schakel uit voor puur lokale werking.",
+          "da": "Når aktiveret sender monitoren måledata til AirGradient-cloud til dashboards og dataeksport. Deaktiver for ren lokal drift.",
+          "de": "Wenn aktiviert, sendet der Monitor Messdaten an die AirGradient-Cloud für Dashboards und Datenexport. Deaktivieren für rein lokalen Betrieb.",
+          "es": "Si está habilitado, el monitor envía datos de medición a la nube de AirGradient para paneles y exportación de datos. Deshabilítalo para un funcionamiento puramente local.",
+          "fr": "Si activé, le moniteur envoie les données de mesure au cloud AirGradient pour les tableaux de bord et l'export de données. Désactive pour un fonctionnement purement local.",
+          "it": "Se abilitato, il monitor invia i dati di misurazione al cloud AirGradient per dashboard ed esportazione dati. Disabilita per un funzionamento puramente locale.",
+          "no": "Når aktivert sender monitoren måledata til AirGradient-skyen for dashboards og dataeksport. Deaktiver for ren lokal drift.",
+          "sv": "När aktiverat skickar monitorn mätdata till AirGradient-molnet för instrumentpaneler och dataexport. Inaktivera för ren lokal drift.",
+          "pl": "Po włączeniu monitor wysyła dane pomiarowe do chmury AirGradient dla pulpitów i eksportu danych. Wyłącz, aby działać wyłącznie lokalnie.",
+          "ru": "Если включено, монитор отправляет данные измерений в облако AirGradient для панелей и экспорта данных. Отключите для чисто локальной работы.",
+          "ko": "활성화하면 모니터가 측정 데이터를 AirGradient 클라우드로 전송하여 대시보드와 데이터보내기에 사용합니다. 순수 로컬 운영을 원하면 비활성화하세요."
         }
       },
       {
@@ -168,7 +210,7 @@
           "en": "Use corrected PM 2.5 values",
           "nl": "Gebruik gecorrigeerde PM 2,5-waarden",
           "da": "Brug korrigerede PM 2,5-værdier",
-          "de": "Verwenden Sie korrigierte PM 2,5-Werte",
+          "de": "Korrigierte PM-2,5-Werte verwenden",
           "es": "Usar valores corregidos de PM 2.5",
           "fr": "Utiliser les valeurs corrigées de PM 2,5",
           "it": "Usa valori corretti di PM 2,5",
@@ -179,38 +221,19 @@
           "ko": "보정된 PM 2.5 값 사용"
         },
         "hint": {
-          "en": "By enabling this feature the correction algorithms provided by AirGradient will be used to correctly adjust the PM 2.5 values. When disabled raw measurements will be displayed.",
-          "nl": "Door deze functie in te schakelen, worden de correctie-algoritmen van AirGradient gebruikt om de PM 2,5-waarden correct aan te passen. Wanneer uitgeschakeld, worden ruwe metingen weergegeven.",
-          "da": "Ved at aktivere denne funktion vil de korrektion algoritmer leveret af AirGradient blive brugt til at justere PM 2,5-værdierne korrekt. Når deaktiveret, vises rå målinger.",
-          "de": "Durch Aktivieren dieser Funktion werden die von AirGradient bereitgestellten Korrekturalgorithmen verwendet, um die PM 2,5-Werte korrekt anzupassen. Wenn deaktiviert, werden Rohmessungen angezeigt.",
-          "es": "Al habilitar esta función, los algoritmos de corrección proporcionados por AirGradient se utilizarán para ajustar correctamente los valores de PM 2.5. Cuando está deshabilitado, se mostrarán las mediciones en bruto.",
-          "fr": "En activant cette fonctionnalité, les algorithmes de correction fournis par AirGradient seront utilisés pour ajuster correctement les valeurs de PM 2,5. Lorsqu'elle est désactivée, les mesures brutes seront affichées.",
-          "it": "Abilitando questa funzione, gli algoritmi di correzione forniti da AirGradient verranno utilizzati per regolare correttamente i valori di PM 2,5. Quando disabilitato, verranno visualizzate le misurazioni grezze.",
-          "no": "Ved å aktivere denne funksjonen vil korrigeringsalgoritmene levert av AirGradient bli brukt til å justere PM 2,5-verdiene riktig. Når deaktivert, vises råmålinger.",
-          "sv": "Genom att aktivera denna funktion kommer korrigeringsalgoritmerna som tillhandahålls av AirGradient att användas för att korrekt justera PM 2,5-värdena. När den är inaktiverad visas råa mätningar.",
-          "pl": "Włączając tę funkcję, algorytmy korekcji dostarczone przez AirGradient będą używane do prawidłowego dostosowania wartości PM 2,5. Gdy jest wyłączona, wyświetlane będą surowe pomiary.",
-          "ru": "Включив эту функцию, алгоритмы коррекции, предоставленные AirGradient, будут использоваться для правильной настройки значений PM 2,5. При отключении будут отображаться необработанные измерения.",
-          "ko": "이 기능을 활성화하면 AirGradient에서 제공하는 보정 알고리즘을 사용하여 PM 2.5 값을 올바르게 조정합니다. 비활성화되면 원시 측정값이 표시됩니다."
+          "en": "Compensated values apply AirGradient correction algorithms for more accurate PM2.5 readings. When disabled, raw sensor measurements are shown.",
+          "nl": "Gecompenseerde waarden gebruiken AirGradient-correctiealgoritmen voor nauwkeurigere PM2,5-metingen. Als dit is uitgeschakeld, worden ongecorrigeerde sensormetingen getoond.",
+          "da": "Kompenserede værdier anvender AirGradient-korrektionsalgoritmer for mere præcise PM2,5-aflæsninger. Når deaktiveret vises rå sensormålinger.",
+          "de": "Kompensierte Werte verwenden AirGradient-Korrekturalgorithmen für genauere PM2,5-Messwerte. Wenn deaktiviert, werden Rohsensorwerte angezeigt.",
+          "es": "Los valores compensados aplican algoritmos de corrección de AirGradient para lecturas de PM2.5 más precisas. Si está deshabilitado, se muestran mediciones en bruto del sensor.",
+          "fr": "Les valeurs compensées appliquent les algorithmes de correction AirGradient pour des lectures PM2,5 plus précises. Si désactivé, les mesures brutes du capteur sont affichées.",
+          "it": "I valori compensati applicano gli algoritmi di correzione AirGradient per letture PM2,5 più accurate. Se disabilitato, vengono mostrate le misurazioni grezze del sensore.",
+          "no": "Kompenserte verdier bruker AirGradient-korrigeringsalgoritmer for mer nøyaktige PM2,5-avlesninger. Når deaktivert vises rå sensormålinger.",
+          "sv": "Kompenserade värden använder AirGradients korrigeringsalgoritmer för mer exakta PM2,5-mätningar. När inaktiverat visas råa sensormätningar.",
+          "pl": "Skompensowane wartości stosują algorytmy korekcji AirGradient dla dokładniejszych odczytów PM2,5. Po wyłączeniu wyświetlane są surowe pomiary z czujnika.",
+          "ru": "Компенсированные значения применяют алгоритмы коррекции AirGradient для более точных показаний PM2,5. При отключении отображаются необработанные измерения датчика.",
+          "ko": "보정된 값은 AirGradient 보정 알고리즘을 적용해 더 정확한 PM2.5 측정값을 제공합니다. 비활성화하면 원시 센서 측정값이 표시됩니다."
         }
-      },
-      {
-        "id": "co2CalibrationRequested",
-        "label": {
-          "en": "Request CO2 Calibration",
-          "nl": "Vraag CO2-calibratie aan",
-          "da": "Anmod om CO2-kalibrering",
-          "de": "CO2-Kalibrierung anfordern",
-          "es": "Solicitar calibración de CO2",
-          "fr": "Demander l'étalonnage du CO2",
-          "it": "Richiedi la calibrazione del CO2",
-          "no": "Be om CO2-kalibrering",
-          "sv": "Begär CO2-kalibrering",
-          "pl": "Poproś o kalibrację CO2",
-          "ru": "Запрос калибровки CO2",
-          "ko": "CO2 보정 요청"
-        },
-        "type": "checkbox",
-        "value": false
       }
     ]
   },

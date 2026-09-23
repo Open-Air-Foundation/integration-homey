@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Breezy</title>
+  <script src="lottie.min.js"></script>
+  <style>
+    /**
+     * Styles adapted from AirGradient Map.B-g2mCLB.css
+     * (header-card / aqi-band / aqi-mascot / category rules).
+     */
+    :root {
+      --footer-h: 54px;
+      --header-bg: rgb(146, 226, 120);
+      --category-color: #39891f;
+      --category-accent: #39891f33;
+      --strip-bg: rgb(88, 211, 47);
+      --strip-color: rgb(255, 255, 255);
+      --secondary-font: Inter, Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background: transparent;
+      font-family: var(--secondary-font);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .header-card {
+      background: var(--header-bg);
+      border-radius: 16px;
+      display: grid;
+      grid-template-rows: minmax(0, 1fr) var(--footer-h, auto);
+      width: 100%;
+      min-height: 240px;
+      height: 100%;
+      overflow: hidden;
+      position: relative;
+      touch-action: none;
+      user-select: none;
+      color: #111;
+    }
+
+    .header-card.is-empty {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(120, 120, 128, 0.16);
+      color: rgba(60, 60, 67, 0.85);
+      padding: 20px;
+      text-align: center;
+    }
+
+    .header-card.is-empty .aqi-band,
+    .header-card.is-empty .header-top-area,
+    .header-card.is-empty .measure-strip {
+      display: none !important;
+    }
+
+    .header-card:not(.is-empty) > .message {
+      display: none !important;
+    }
+
+    .message {
+      font-size: 14px;
+      line-height: 1.35;
+      font-weight: 500;
+    }
+
+    .aqi-band.header-band {
+      border-radius: 16px 16px 0 0;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: var(--footer-h, 0);
+      overflow: hidden;
+      pointer-events: none;
+      position: absolute;
+      z-index: 1;
+      background: var(--header-bg);
+    }
+
+    .aqi-bg {
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      position: absolute;
+      opacity: 1;
+    }
+
+    .aqi-bg svg,
+    .aqi-mascot svg {
+      height: 100% !important;
+      width: 100% !important;
+    }
+
+    .aqi-bg-intro {
+      opacity: 0;
+    }
+
+    .aqi-bg-loop {
+      opacity: 1;
+    }
+
+    .aqi-mascot {
+      filter: drop-shadow(0 10px 18px rgba(0, 0, 0, 0.12));
+      height: 140px;
+      width: 140px;
+      pointer-events: none;
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      z-index: 2;
+    }
+
+    .header-top-area {
+      border-radius: 16px 16px 0 0;
+      min-height: 198px;
+      overflow: hidden;
+      position: relative;
+      z-index: 2;
+    }
+
+    .header-inner {
+      padding: 16px 16px 18px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .header-top {
+      align-items: flex-start;
+      display: flex;
+      gap: 12px;
+      justify-content: flex-start;
+    }
+
+    .title-block {
+      max-width: calc(100% - 150px);
+    }
+
+    .location-title {
+      color: #141414;
+      font-family: var(--secondary-font);
+      font-size: 22px;
+      font-weight: 800;
+      letter-spacing: -0.2px;
+      line-height: 1.05;
+      margin: 0;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+    }
+
+    .category {
+      color: var(--category-color, hsla(0, 0%, 8%, 0.78));
+      font-family: var(--secondary-font);
+      font-size: 28px;
+      font-weight: 900;
+      margin: 6px 0 10px;
+    }
+
+    .category-text {
+      display: inline-block;
+      position: relative;
+      color: inherit;
+    }
+
+    .measure-strip {
+      align-items: center;
+      background: var(--strip-bg);
+      border-radius: 0 0 16px 16px;
+      box-sizing: border-box;
+      color: var(--strip-color);
+      display: flex;
+      gap: 10px;
+      height: var(--footer-h, auto);
+      justify-content: space-between;
+      padding: 10px 16px;
+      position: relative;
+      width: 100%;
+      z-index: 3;
+    }
+
+    .strip-left {
+      color: currentColor;
+      font-family: var(--secondary-font);
+      font-size: 15px;
+      font-weight: 900;
+      white-space: nowrap;
+    }
+
+    .strip-main {
+      align-items: baseline;
+      display: flex;
+      gap: 0;
+    }
+
+    .strip-k {
+      margin-right: 6px;
+      opacity: 0.85;
+    }
+
+    .strip-v {
+      opacity: 0.95;
+    }
+
+    .strip-right {
+      font-family: var(--secondary-font);
+      text-align: right;
+      white-space: nowrap;
+    }
+
+    .strip-title {
+      font-weight: 900;
+      font-size: 12px;
+      opacity: 0.8;
+    }
+
+    .strip-sub {
+      font-size: 12px;
+      font-weight: 800;
+      margin-top: 2px;
+      opacity: 0.8;
+    }
+
+    .measure-strip.text-light {
+      color: #fffffff5;
+    }
+
+    .measure-strip.text-yellow-dark {
+      color: #141414eb;
+    }
+
+    .hidden {
+      display: none !important;
+    }
+
+    @media (max-width: 768px) {
+      .aqi-mascot {
+        height: 120px;
+        width: 120px;
+        right: 6px;
+        top: 8px;
+      }
+
+      .location-title {
+        font-size: 20px;
+      }
+
+      .category {
+        font-size: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="card" class="header-card is-empty" style="--footer-h: 54px;">
+    <div id="message" class="message">Select an outdoor AirGradient monitor</div>
+
+    <div class="aqi-band header-band" aria-hidden="true">
+      <div id="bg-intro" class="aqi-bg aqi-bg-intro" aria-hidden="true"></div>
+      <div id="bg-loop" class="aqi-bg aqi-bg-loop" aria-hidden="true"></div>
+      <div id="mascot" class="aqi-mascot" aria-hidden="true"></div>
+    </div>
+
+    <div class="header-top-area">
+      <div class="header-inner">
+        <div class="header-top">
+          <div class="title-block">
+            <h3 id="location" class="location-title"></h3>
+            <p class="category">
+              <span id="category" class="category-text"></span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="strip" class="measure-strip">
+      <div class="strip-left">
+        <div class="strip-main">
+          <span class="strip-k">PM<sub>2.5</sub>:</span>
+          <span id="pm25" class="strip-v">—</span>
+        </div>
+      </div>
+      <div class="strip-right">
+        <div class="strip-title">Air Quality</div>
+        <div class="strip-sub">PM<sub>2.5</sub> (μg/m³)</div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const POLL_MS = 60000;
+    /** Idle pause between mascot plays; matches AirGradient Map `AqiLottieBand` (6e3). */
+    const MASCOT_REPLAY_DELAY_MS = 6000;
+    const BG_LOTTIE_OPTS = {
+      renderer: 'svg',
+      rendererSettings: {
+        // Cover the wide header band; `meet` left empty side gutters.
+        // AirGradient Map uses xMidYMax so hills stay pinned to the bottom edge.
+        preserveAspectRatio: 'xMidYMax slice',
+      },
+    };
+    const MASCOT_LOTTIE_OPTS = {
+      renderer: 'svg',
+      rendererSettings: {
+        preserveAspectRatio: 'xMidYMid meet',
+      },
+    };
+    const ASSET = {
+      bgIntro: (slug) => `lottie/background/aqi-bg-${slug}-intro.json`,
+      bgLoop: (slug) => `lottie/background/aqi-bg-${slug}.json`,
+      mascot: (slug) => `lottie/mascots/aqi-mascot-${slug}.json`,
+    };
+
+    /**
+     * Presentation keyed by Homey `level_aqi` capability ids.
+     * Colors match AirGradient's dashboard AQI header card; Lottie assets use kebab-case slugs.
+     */
+    const AQI_BY_LEVEL = {
+      good: {
+        label: 'Good',
+        category: 'good',
+        theme: {
+          headerBg: 'rgb(146, 226, 120)',
+          categoryColor: '#39891f',
+          categoryAccent: '#39891f33',
+          stripBg: 'rgb(88, 211, 47)',
+        },
+      },
+      moderate: {
+        label: 'Moderate',
+        category: 'moderate',
+        theme: {
+          headerBg: 'rgb(255, 231, 130)',
+          categoryColor: '#a68e28',
+          categoryAccent: '#a68e2833',
+          stripBg: 'rgb(255, 218, 62)',
+        },
+      },
+      unhealthy_sensitive: {
+        label: 'Unhealthy for Sensitive Groups',
+        category: 'unhealthy-sensitive',
+        theme: {
+          headerBg: 'rgb(255, 185, 89)',
+          categoryColor: '#a66000',
+          categoryAccent: '#a6600033',
+          stripBg: 'rgb(255, 147, 0)',
+        },
+      },
+      unhealthy: {
+        label: 'Unhealthy',
+        category: 'unhealthy',
+        theme: {
+          headerBg: 'rgb(236, 113, 128)',
+          categoryColor: '#921726',
+          categoryAccent: '#92172633',
+          stripBg: 'rgb(225, 36, 59)',
+        },
+      },
+      very_unhealthy: {
+        label: 'Very Unhealthy',
+        category: 'very-unhealthy',
+        theme: {
+          headerBg: 'rgb(170, 119, 215)',
+          categoryColor: '#511d7d',
+          categoryAccent: '#511d7d33',
+          stripBg: 'rgb(124, 45, 193)',
+        },
+      },
+      hazardous: {
+        label: 'Hazardous',
+        category: 'hazardous',
+        theme: {
+          headerBg: 'rgb(174, 117, 111)',
+          categoryColor: '#551c16',
+          categoryAccent: '#551c1633',
+          stripBg: 'rgb(130, 43, 34)',
+        },
+      },
+    };
+
+    /** Strip text class used by AirGradient for readability on yellow vs other strips. */
+    const STRIP_TEXT_CLASS = {
+      moderate: 'text-yellow-dark',
+    };
+
+    const els = {
+      card: document.getElementById('card'),
+      message: document.getElementById('message'),
+      location: document.getElementById('location'),
+      category: document.getElementById('category'),
+      categoryWrap: document.querySelector('.category'),
+      band: document.querySelector('.aqi-band'),
+      strip: document.getElementById('strip'),
+      pm25: document.getElementById('pm25'),
+      bgIntro: document.getElementById('bg-intro'),
+      bgLoop: document.getElementById('bg-loop'),
+      mascot: document.getElementById('mascot'),
+    };
+
+    let HomeyApi = null;
+    let currentCategory = null;
+    let animIntro = null;
+    let animLoop = null;
+    let animMascot = null;
+    let mascotReplayTimeout = null;
+    let introComplete = false;
+    let loopReady = false;
+    let bgSwitched = false;
+
+    /**
+     * Homey widget bootstrap.
+     */
+    function onHomeyReady(Homey) {
+      HomeyApi = Homey;
+      // Matches AirGradient header-top-area (198) + footer (54).
+      Homey.ready({ height: 252 });
+      refresh();
+      setInterval(refresh, POLL_MS);
+    }
+
+    /**
+     * Loads status for the selected device and updates the card.
+     */
+    async function refresh() {
+      const deviceIds = HomeyApi.getDeviceIds();
+      const deviceId = Array.isArray(deviceIds) ? deviceIds[0] : null;
+
+      if (!deviceId) {
+        showEmpty('Select an outdoor AirGradient monitor');
+        return;
+      }
+
+      try {
+        const status = await HomeyApi.api('GET', `/?deviceId=${encodeURIComponent(deviceId)}`);
+        applyStatus(status);
+      } catch (error) {
+        console.error(error);
+        showEmpty('Unable to load air quality');
+      }
+    }
+
+    /**
+     * Applies API payload using AirGradient dashboard color tokens and CSS.
+     * Presentation is derived from the `level_aqi` capability value.
+     */
+    function applyStatus(status) {
+      if (!status || !status.ok) {
+        const messages = {
+          no_device: 'Select an outdoor AirGradient monitor',
+          device_not_found: 'Device not found',
+          no_aqi: status && status.name
+            ? `${status.name}: waiting for AQI`
+            : 'Waiting for AQI data',
+        };
+        showEmpty(messages[status && status.error] || 'Unable to load air quality');
+        return;
+      }
+
+      const info = AQI_BY_LEVEL[status.level_aqi];
+      if (!info) {
+        showEmpty(status.name ? `${status.name}: waiting for AQI` : 'Waiting for AQI data');
+        return;
+      }
+
+      els.card.classList.remove('is-empty');
+
+      const { theme, category, label } = info;
+      els.card.style.background = theme.headerBg;
+      els.card.style.setProperty('--header-bg', theme.headerBg);
+      els.card.style.setProperty('--footer-h', '54px');
+      els.band.style.backgroundColor = theme.headerBg;
+      els.categoryWrap.style.setProperty('--category-color', theme.categoryColor);
+      els.categoryWrap.style.setProperty('--category-accent', theme.categoryAccent);
+      els.strip.style.backgroundColor = theme.stripBg;
+      els.strip.classList.remove('text-light', 'text-yellow-dark');
+      els.strip.classList.add(STRIP_TEXT_CLASS[category] || 'text-light');
+
+      els.location.textContent = status.name || 'AirGradient';
+      els.category.textContent = label;
+      els.pm25.textContent = formatPm25(status.pm25);
+
+      if (category !== currentCategory) {
+        currentCategory = category;
+        playCategory(category);
+      }
+    }
+
+    /**
+     * Formats PM2.5 like AirGradient's strip (one decimal + μg/m³).
+     */
+    function formatPm25(value) {
+      if (value === null || value === undefined || Number.isNaN(value)) return '—';
+      const rounded = Math.round(Number(value) * 10) / 10;
+      return `${rounded.toFixed(1)} μg/m³`;
+    }
+
+    /**
+     * Shows the empty / error state and tears down animations.
+     */
+    function showEmpty(text) {
+      currentCategory = null;
+      destroyAnimations();
+      els.card.classList.add('is-empty');
+      els.message.textContent = text;
+    }
+
+    /**
+     * Clears the delayed mascot replay timer.
+     */
+    function clearMascotReplay() {
+      if (mascotReplayTimeout) {
+        window.clearTimeout(mascotReplayTimeout);
+        mascotReplayTimeout = null;
+      }
+    }
+
+    /**
+     * Switches from intro to looping background once both are ready.
+     * Matches AirGradient Map: wait for intro `complete` and loop `DOMLoaded`.
+     */
+    function maybeSwitchToBgLoop() {
+      if (bgSwitched || !introComplete || !loopReady || !animLoop) return;
+      bgSwitched = true;
+      animLoop.goToAndPlay(0, true);
+      els.bgLoop.style.opacity = '1';
+      els.bgIntro.style.opacity = '0';
+      window.requestAnimationFrame(() => {
+        try {
+          if (animIntro) animIntro.destroy();
+        } catch (error) {
+          // Ignore teardown races while swapping categories.
+        }
+        animIntro = null;
+        els.bgIntro.innerHTML = '';
+      });
+    }
+
+    /**
+     * Plays intro background once, then loops background; mascot plays with a pause between runs.
+     */
+    function playCategory(slug) {
+      destroyAnimations();
+
+      els.bgIntro.style.opacity = '1';
+      els.bgLoop.style.opacity = '0';
+
+      animLoop = window.lottie.loadAnimation({
+        ...BG_LOTTIE_OPTS,
+        container: els.bgLoop,
+        loop: true,
+        autoplay: false,
+        path: ASSET.bgLoop(slug),
+      });
+      animLoop.addEventListener('DOMLoaded', () => {
+        loopReady = true;
+        maybeSwitchToBgLoop();
+      });
+
+      animIntro = window.lottie.loadAnimation({
+        ...BG_LOTTIE_OPTS,
+        container: els.bgIntro,
+        loop: false,
+        autoplay: true,
+        path: ASSET.bgIntro(slug),
+      });
+      animIntro.addEventListener('complete', () => {
+        introComplete = true;
+        maybeSwitchToBgLoop();
+      });
+
+      animMascot = window.lottie.loadAnimation({
+        ...MASCOT_LOTTIE_OPTS,
+        container: els.mascot,
+        loop: false,
+        autoplay: true,
+        path: ASSET.mascot(slug),
+      });
+      animMascot.addEventListener('complete', () => {
+        clearMascotReplay();
+        mascotReplayTimeout = window.setTimeout(() => {
+          mascotReplayTimeout = null;
+          if (animMascot) animMascot.goToAndPlay(0, true);
+        }, MASCOT_REPLAY_DELAY_MS);
+      });
+    }
+
+    /**
+     * Destroys active Lottie instances before swapping categories.
+     */
+    function destroyAnimations() {
+      clearMascotReplay();
+      [animIntro, animLoop, animMascot].forEach((anim) => {
+        if (!anim) return;
+        anim.destroy();
+      });
+      animIntro = null;
+      animLoop = null;
+      animMascot = null;
+      introComplete = false;
+      loopReady = false;
+      bgSwitched = false;
+      els.bgIntro.innerHTML = '';
+      els.bgLoop.innerHTML = '';
+      els.mascot.innerHTML = '';
+    }
+  </script>
+</body>
+</html>

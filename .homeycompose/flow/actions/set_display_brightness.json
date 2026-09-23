@@ -1,0 +1,79 @@
+{
+  "id": "set_display_brightness",
+  "platforms": [
+    "local"
+  ],
+  "title": {
+    "en": "Set display brightness to [[brightness]]",
+    "nl": "Stel displayhelderheid in op [[brightness]]",
+    "da": "Indstil skærmens lysstyrke til [[brightness]]",
+    "de": "Display-Helligkeit auf [[brightness]] setzen",
+    "es": "Establecer brillo de pantalla en [[brightness]]",
+    "fr": "Définir la luminosité de l'écran sur [[brightness]]",
+    "it": "Imposta luminosità display su [[brightness]]",
+    "no": "Sett skjermens lysstyrke til [[brightness]]",
+    "sv": "Ställ in skärmens ljusstyrka till [[brightness]]",
+    "pl": "Ustaw jasność wyświetlacza na [[brightness]]",
+    "ru": "Установить яркость дисплея на [[brightness]]",
+    "ko": "디스플레이 밝기를 [[brightness]](으)로 설정"
+  },
+  "titleFormatted": {
+    "en": "Set display brightness to [[brightness]]",
+    "nl": "Stel displayhelderheid in op [[brightness]]",
+    "da": "Indstil skærmens lysstyrke til [[brightness]]",
+    "de": "Display-Helligkeit auf [[brightness]] setzen",
+    "es": "Establecer brillo de pantalla en [[brightness]]",
+    "fr": "Définir la luminosité de l'écran sur [[brightness]]",
+    "it": "Imposta luminosità display su [[brightness]]",
+    "no": "Sett skjermens lysstyrke til [[brightness]]",
+    "sv": "Ställ in skärmens ljusstyrka till [[brightness]]",
+    "pl": "Ustaw jasność wyświetlacza na [[brightness]]",
+    "ru": "Установить яркость дисплея на [[brightness]]",
+    "ko": "디스플레이 밝기를 [[brightness]](으)로 설정"
+  },
+  "hint": {
+    "en": "Sets the Indoor Monitor display brightness (0–100%).",
+    "nl": "Stelt de displayhelderheid van de Binnenmonitor in (0–100%).",
+    "da": "Indstiller Indendørs Monitorens skærmlysstyrke (0–100%).",
+    "de": "Stellt die Display-Helligkeit des Innenmonitors ein (0–100%).",
+    "es": "Establece el brillo de pantalla del Monitor Interior (0–100%).",
+    "fr": "Définit la luminosité de l'écran du Moniteur Intérieur (0–100 %).",
+    "it": "Imposta la luminosità del display del Monitor Interno (0–100%).",
+    "no": "Angir skjermens lysstyrke på Innendørs Monitoren (0–100%).",
+    "sv": "Anger skärmens ljusstyrka på Inomhus Monitorn (0–100%).",
+    "pl": "Ustawia jasność wyświetlacza Monitora Wewnętrznego (0–100%).",
+    "ru": "Задаёт яркость дисплея Внутреннего Монитора (0–100%).",
+    "ko": "실내 모니터 디스플레이 밝기를 설정합니다(0–100%)."
+  },
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "filter": "driver_id=indoor-local&capabilities=dim.display"
+    },
+    {
+      "name": "brightness",
+      "type": "range",
+      "title": {
+        "en": "Brightness",
+        "nl": "Helderheid",
+        "da": "Lysstyrke",
+        "de": "Helligkeit",
+        "es": "Brillo",
+        "fr": "Luminosité",
+        "it": "Luminosità",
+        "no": "Lysstyrke",
+        "sv": "Ljusstyrka",
+        "pl": "Jasność",
+        "ru": "Яркость",
+        "ko": "밝기"
+      },
+      "min": 0,
+      "max": 1,
+      "step": 0.01,
+      "label": "%",
+      "labelMultiplier": 100,
+      "labelDecimals": 0
+    }
+  ]
+}

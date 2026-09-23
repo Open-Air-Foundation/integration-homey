@@ -13,20 +13,69 @@
     "ru": "Наружный монитор",
     "ko": "실외 모니터"
   },
+  "deprecated": true,
   "class": "sensor",
   "capabilities": [
     "measure_pm1",
+    "level_pm1",
     "measure_pm25",
+    "level_pm25",
     "measure_pm10",
+    "level_pm10",
     "measure_co2",
+    "level_co2",
     "measure_pm03_cnt",
     "measure_temperature",
     "measure_humidity",
     "measure_voc",
     "measure_voc_idx",
+    "level_tvoc",
     "measure_nox",
-    "measure_nox_idx"
+    "measure_nox_idx",
+    "level_nox"
   ],
+  "capabilitiesOptions": {
+    "measure_humidity": {
+      "title": {
+        "en": "Relative Humidity",
+        "nl": "Relatieve luchtvochtigheid",
+        "da": "Relativ fugtighed",
+        "de": "Relative Luftfeuchtigkeit",
+        "es": "Humedad relativa",
+        "fr": "Humidité relative",
+        "it": "Umidità relativa",
+        "no": "Relativ fuktighet",
+        "sv": "Relativ fuktighet",
+        "pl": "Wilgotność względna",
+        "ru": "Относительная влажность",
+        "ko": "상대 습도"
+      },
+      "icon": "/assets/capabilities/measure_relative_humidity.svg"
+    },
+    "measure_pm1": {
+      "decimals": 3
+    },
+    "measure_pm10": {
+      "decimals": 3
+    },
+    "measure_nox": {
+      "decimals": 0,
+      "units": {
+        "en": "ticks",
+        "nl": "ticks",
+        "da": "tællinger",
+        "de": "Ticks",
+        "es": "clics",
+        "fr": "coups",
+        "it": "ticchetti",
+        "no": "tikk",
+        "sv": "tikk",
+        "pl": "tyknięcia",
+        "ru": "тики",
+        "ko": "틱"
+      }
+    }
+  },
   "platforms": [
     "local"
   ],
@@ -46,8 +95,12 @@
         "singular": true
       },
       "navigation": {
-        "next": "add_devices"
+        "next": "pair_continue"
       }
+    },
+    {
+      "id": "pair_continue",
+      "template": "loading"
     },
     {
       "id": "device_ip",

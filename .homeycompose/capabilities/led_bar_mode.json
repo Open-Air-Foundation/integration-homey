@@ -1,0 +1,73 @@
+{
+  "type": "enum",
+  "title": {
+    "en": "LED Bar Mode",
+    "nl": "LED-balk modus",
+    "da": "LED-bar tilstand",
+    "de": "LED-Leisten-Modus",
+    "es": "Modo de barra LED",
+    "fr": "Mode barre LED",
+    "it": "Modalità barra LED",
+    "no": "LED-bar modus",
+    "sv": "LED-barens läge",
+    "pl": "Tryb paska LED",
+    "ru": "Режим LED-полосы",
+    "ko": "LED 바 모드"
+  },
+  "values": [
+    {
+      "id": "co2",
+      "title": {
+        "en": "CO₂",
+        "nl": "CO₂",
+        "da": "CO₂",
+        "de": "CO₂",
+        "es": "CO₂",
+        "fr": "CO₂",
+        "it": "CO₂",
+        "no": "CO₂",
+        "sv": "CO₂",
+        "pl": "CO₂",
+        "ru": "CO₂",
+        "ko": "CO₂"
+      }
+    },
+    {
+      "id": "pm",
+      "title": {
+        "en": "Particulate matter",
+        "nl": "Fijnstof",
+        "da": "Partikler",
+        "de": "Feinstaub",
+        "es": "Material particulado",
+        "fr": "Matières particulaires",
+        "it": "Particolato",
+        "no": "Partikler",
+        "sv": "Partiklar",
+        "pl": "Pył zawieszony",
+        "ru": "Взвешенные частицы",
+        "ko": "미세먼지"
+      }
+    },
+    {
+      "id": "off",
+      "title": {
+        "en": "Off",
+        "nl": "Uit",
+        "da": "Fra",
+        "de": "Aus",
+        "es": "Apagado",
+        "fr": "Éteint",
+        "it": "Spento",
+        "no": "Av",
+        "sv": "Av",
+        "pl": "Wyłączone",
+        "ru": "Выкл.",
+        "ko": "끄기"
+      }
+    }
+  ],
+  "getable": true,
+  "setable": true,
+  "uiComponent": "picker"
+}

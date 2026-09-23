@@ -1,0 +1,63 @@
+{
+  "id": "measure_voc_raw_changed",
+  "platforms": [
+    "local",
+    "cloud"
+  ],
+  "title": {
+    "en": "The VOC Raw value has changed",
+    "nl": "De ongecorrigeerde VOC-waarde is veranderd",
+    "da": "Den rå VOC-værdi er ændret",
+    "de": "Der VOC-Rohwert hat sich geändert",
+    "es": "El valor bruto de VOC ha cambiado",
+    "fr": "La valeur brute de COV a changé",
+    "it": "Il valore VOC grezzo è cambiato",
+    "no": "Den rå VOC-verdien har endret seg",
+    "sv": "Det råa VOC-värdet har ändrats",
+    "pl": "Surowa wartość VOC uległa zmianie",
+    "ru": "Сырое значение VOC изменилось",
+    "ko": "VOC 원시 값이 변경되었습니다"
+  },
+  "titleFormatted": {
+    "en": "The VOC Raw value has changed",
+    "nl": "De ongecorrigeerde VOC-waarde is veranderd",
+    "da": "Den rå VOC-værdi er ændret",
+    "de": "Der VOC-Rohwert hat sich geändert",
+    "es": "El valor bruto de VOC ha cambiado",
+    "fr": "La valeur brute de COV a changé",
+    "it": "Il valore VOC grezzo è cambiato",
+    "no": "Den rå VOC-verdien har endret seg",
+    "sv": "Det råa VOC-värdet har ändrats",
+    "pl": "Surowa wartość VOC uległa zmianie",
+    "ru": "Сырое значение VOC изменилось",
+    "ko": "VOC 원시 값이 변경되었습니다"
+  },
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "filter": "driver_id=indoor-local|outdoor-local|indoor-cloud|outdoor-cloud&capabilities=measure_voc_raw"
+    }
+  ],
+  "tokens": [
+    {
+      "name": "measure_voc_raw",
+      "title": {
+        "en": "VOC Raw",
+        "nl": "VOC ongecorrigeerd",
+        "da": "VOC rå",
+        "de": "VOC-Rohwert",
+        "es": "VOC bruto",
+        "fr": "COV brut",
+        "it": "VOC grezzo",
+        "no": "VOC rå",
+        "sv": "VOC rå",
+        "pl": "VOC surowy",
+        "ru": "VOC (сырой)",
+        "ko": "VOC 원시"
+      },
+      "type": "number",
+      "example": 2
+    }
+  ]
+}

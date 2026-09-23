@@ -1,15 +1,15 @@
 import PairSession from 'homey/lib/PairSession';
-import SharedDriver from '../../lib/shared_driver'
+import LocalDriver from '../../lib/local/driver';
 
-class IndoorDriver extends SharedDriver {
+/**
+ * Homey loads one driver class from this folder.
+ * Existing paired devices keep this driver id; new pairs use indoor-local.
+ * The class delegates to {@link LocalDriver} with the indoor model filter.
+ */
+class IndoorDriver extends LocalDriver {
 
-  async onInit() {
-    super.onInit();
-    this.log('IndoorDriver has been initialized');
-  }
-
-  async onPair(session: PairSession) {
-    return super.onSharedPair(session,false);
+  async onPair(session: PairSession): Promise<void> {
+    return this.onDevicePair(session, false);
   }
 }
 

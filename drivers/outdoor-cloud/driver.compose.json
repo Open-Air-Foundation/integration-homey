@@ -1,0 +1,190 @@
+{
+  "$extends": "apikey",
+  "name": {
+    "en": "Outdoor Monitor",
+    "nl": "Buitenmonitor",
+    "da": "Udendørs skærm",
+    "de": "Außenmonitor",
+    "es": "Monitor Exterior",
+    "fr": "Moniteur Extérieur",
+    "it": "Monitor Esterno",
+    "no": "Utemonitor",
+    "sv": "Utomhusmonitor",
+    "pl": "Monitor Zewnętrzny",
+    "ru": "Наружный монитор",
+    "ko": "실외 모니터"
+  },
+  "class": "sensor",
+  "capabilities": [
+    "measure_temperature",
+    "measure_humidity",
+    "measure_dew_point",
+    "measure_absolute_humidity",
+    "measure_humidex",
+    "level_humidex",
+    "measure_co2",
+    "level_co2",
+    "measure_aqi",
+    "level_aqi",
+    "measure_pm1",
+    "level_pm1",
+    "measure_pm25",
+    "level_pm25",
+    "measure_pm10",
+    "level_pm10",
+    "measure_nox_idx",
+    "level_nox",
+    "measure_tvoc_index",
+    "level_tvoc",
+    "measure_tvoc",
+    "measure_pm03_cnt",
+    "measure_voc_raw",
+    "measure_nox_raw"
+  ],
+  "capabilitiesOptions": {
+    "measure_humidity": {
+      "title": {
+        "en": "Relative Humidity",
+        "nl": "Relatieve luchtvochtigheid",
+        "da": "Relativ fugtighed",
+        "de": "Relative Luftfeuchtigkeit",
+        "es": "Humedad relativa",
+        "fr": "Humidité relative",
+        "it": "Umidità relativa",
+        "no": "Relativ fuktighet",
+        "sv": "Relativ fuktighet",
+        "pl": "Wilgotność względna",
+        "ru": "Относительная влажность",
+        "ko": "상대 습도"
+      },
+      "icon": "/assets/capabilities/measure_relative_humidity.svg"
+    },
+    "measure_tvoc": {
+      "units": {
+        "en": "ppb",
+        "nl": "ppb",
+        "da": "ppb",
+        "de": "ppb",
+        "es": "ppb",
+        "fr": "ppb",
+        "it": "ppb",
+        "no": "ppb",
+        "sv": "ppb",
+        "pl": "ppb",
+        "ru": "ppb",
+        "ko": "ppb"
+      }
+    },
+    "level_aqi": {
+      "values": [
+        {
+          "id": "good",
+          "title": {
+            "en": "Good",
+            "nl": "Goed",
+            "da": "God",
+            "de": "Gut",
+            "es": "Bueno",
+            "fr": "Bon",
+            "it": "Buono",
+            "no": "God",
+            "sv": "Bra",
+            "pl": "Dobry",
+            "ru": "Хороший",
+            "ko": "좋음"
+          }
+        },
+        {
+          "id": "moderate",
+          "title": {
+            "en": "Moderate",
+            "nl": "Matig",
+            "da": "Moderat",
+            "de": "Mäßig",
+            "es": "Moderado",
+            "fr": "Modéré",
+            "it": "Moderato",
+            "no": "Moderat",
+            "sv": "Måttlig",
+            "pl": "Umiarkowany",
+            "ru": "Умеренный",
+            "ko": "보통"
+          }
+        },
+        {
+          "id": "unhealthy_sensitive",
+          "title": {
+            "en": "Unhealthy for Sensitive Groups",
+            "nl": "Ongezond voor gevoelige groepen",
+            "da": "Usundt for følsomme grupper",
+            "de": "Ungesund für empfindliche Gruppen",
+            "es": "Poco saludable para grupos sensibles",
+            "fr": "Malsain pour les groupes sensibles",
+            "it": "Insalubre per i gruppi sensibili",
+            "no": "Usunt for sensitive grupper",
+            "sv": "Ohälsosamt för känsliga grupper",
+            "pl": "Niezdrowy dla wrażliwych grup",
+            "ru": "Вредно для чувствительных групп",
+            "ko": "민감군에게 나쁨"
+          }
+        },
+        {
+          "id": "unhealthy",
+          "title": {
+            "en": "Unhealthy",
+            "nl": "Ongezond",
+            "da": "Usundt",
+            "de": "Ungesund",
+            "es": "Poco saludable",
+            "fr": "Malsain",
+            "it": "Insalubre",
+            "no": "Usunt",
+            "sv": "Ohälsosamt",
+            "pl": "Niezdrowy",
+            "ru": "Вредный",
+            "ko": "나쁨"
+          }
+        },
+        {
+          "id": "very_unhealthy",
+          "title": {
+            "en": "Very Unhealthy",
+            "nl": "Zeer ongezond",
+            "da": "Meget usundt",
+            "de": "Sehr ungesund",
+            "es": "Muy poco saludable",
+            "fr": "Très malsain",
+            "it": "Molto insalubre",
+            "no": "Svært usunt",
+            "sv": "Mycket ohälsosamt",
+            "pl": "Bardzo niezdrowy",
+            "ru": "Очень вредный",
+            "ko": "매우 나쁨"
+          }
+        },
+        {
+          "id": "hazardous",
+          "title": {
+            "en": "Hazardous",
+            "nl": "Gevaarlijk",
+            "da": "Farligt",
+            "de": "Gefährlich",
+            "es": "Peligroso",
+            "fr": "Dangereux",
+            "it": "Pericoloso",
+            "no": "Farlig",
+            "sv": "Farligt",
+            "pl": "Niebezpieczny",
+            "ru": "Опасный",
+            "ko": "위험"
+          }
+        }
+      ]
+    }
+  },
+  "energy": {
+    "approximation": {
+      "usageConstant": 2.4
+    }
+  }
+}

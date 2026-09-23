@@ -1,5 +1,9 @@
 {
   "id": "measure_pm03_cnt_changed",
+  "platforms": [
+    "local",
+    "cloud"
+  ],
   "title": {
     "en": "The PM0.3 Count value has changed",
     "nl": "De PM0.3-telling is gewijzigd",
@@ -32,7 +36,7 @@
     {
       "type": "device",
       "name": "device",
-      "filter": "driver_id=indoor|outdoor"
+      "filter": "driver_id=indoor|outdoor|indoor-local|outdoor-local|indoor-cloud|outdoor-cloud&capabilities=measure_pm03_cnt"
     }
   ],
   "tokens": [

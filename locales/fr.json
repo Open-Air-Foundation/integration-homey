@@ -1,11 +1,95 @@
 {
-  "device": {
-      "save": "Créer un appareil",
-      "saving": "Vérification de l'appareil",
-      "failed": "Échec de la vérification de l'appareil",
-      "create": "Connectez-vous à un appareil AirGradient",
-      "ipAddress": "Adresse IP de l'appareil",
-      "ipAddressHelp": "Ceci est l'adresse IP unique de votre appareil AirGradient.",
-      "ipAddressRequired": "Veuillez fournir l'adresse IP de votre appareil AirGradient."
-  }
+    "device": {
+        "save": "Créer un appareil",
+        "saving": "Vérification de l'appareil",
+        "failed": "Échec de la vérification de l'appareil",
+        "create": "Connecter un appareil AirGradient",
+        "ipAddress": "Adresse IP de l'appareil",
+        "ipAddressHelp": "Il s'agit de l'adresse IP unique de ton appareil AirGradient.",
+        "ipAddressRequired": "Indique l'adresse IP de ton appareil AirGradient.",
+        "pair": {
+            "list": {
+                "add_by_ip": "Ajouter par IP…"
+            },
+            "device_ip": {
+                "title": "Connecte ton appareil AirGradient",
+                "addressLabel": "Adresse IP ou nom d'hôte",
+                "addressPlaceholder": "192.168.0.1 ou airgradient.local",
+                "connect": "Connecter"
+            },
+            "apikey": {
+                "title": "Connecte ton appareil AirGradient",
+                "intro": "Pour connecter AirGradient via l’API cloud, vous avez besoin d’un jeton d’API du place.",
+                "tokenLabel": "Jeton d’API",
+                "continue": "Continuer",
+                "stepOpen": "Ouvre le <a id=\"ag-link\" href=\"javascript:void(0);\" target=\"_blank\">AirGradient Dashboard</a>.",
+                "stepSettings": "Ouvre <strong>General Settings</strong> → <strong>Connectivity</strong>.",
+                "stepToken": "Active <strong>API access</strong>, copie le jeton et colle-le ci-dessous."
+            }
+        },
+        "repair": {
+            "device_ip": {
+                "title": "Réparer l’appareil",
+                "serialLabel": "Numéro de série",
+                "serialPlaceholder": "Chargement...",
+                "addressLabel": "Adresse IP ou nom d'hôte",
+                "addressPlaceholder": "192.168.0.1 ou airgradient.local",
+                "connect": "Connecter",
+                "errorRetrievingSerial": "Erreur lors de la récupération du numéro de série"
+            },
+            "apikey": {
+                "title": "Réparer l’appareil"
+            }
+        }
+    },
+    "errors": {
+        "deviceUnreachableAt": "L'appareil n'est pas joignable à __ipAddress__",
+        "setDeviceConfigFailed": "Échec de la mise à jour de la configuration de l'appareil AirGradient.",
+        "cloudTokenNotConfigured": "Le jeton d'API cloud n'est pas configuré pour ce lieu.",
+        "cloudUnreachable": "L'API cloud AirGradient est injoignable.",
+        "co2CalibrationNoToken": "Le jeton d'API cloud n'est pas configuré ; impossible de lancer l'étalonnage du CO₂.",
+        "co2CalibrationFailed": "Échec du lancement de l'étalonnage du CO₂ via l'API cloud AirGradient.",
+        "co2CalibrationInProgress": "Un étalonnage du CO₂ a récemment été demandé pour cet appareil. Veuillez attendre environ __minutes__ minute(s) avant de réessayer.",
+        "ledBarTestFailed": "Impossible de démarrer le test de la barre LED sur cet appareil.",
+        "tokenNotValidated": "Le jeton d'API n'a pas encore été validé.",
+        "tokenRequired": "Un jeton d'API est requis.",
+        "tokenInvalid": "Jeton d'API invalide ou lieu introuvable.",
+        "noLocations": "Aucun emplacement trouvé pour ce jeton d'API.",
+        "deviceNotFound": "Impossible de se connecter à un appareil AirGradient à cette adresse.",
+        "wrongDevice": "L'adresse saisie appartient à un autre appareil AirGradient.",
+        "cloudTokenRejected": "Le jeton d'API AirGradient a été refusé. Utilisez Réparer pour en saisir un nouveau.",
+        "tokenPlaceMismatch": "Ce jeton d'API appartient à un lieu qui ne contient pas cet appareil."
+    },
+    "notifications": {
+        "driver_deprecated": "Le driver de __device__ est obsolète. Supprime cet appareil et ajoute-le à nouveau pour qu'il utilise le nouveau driver.",
+        "co2_calibration_started": "Étalonnage du CO₂ démarré sur __device__. Les mesures devraient se stabiliser autour de 400 ppm en environ 10 minutes.",
+        "co2_calibration_finished": "L'étalonnage du CO₂ sur __device__ devrait maintenant être terminé. Le moniteur devrait indiquer environ 400 ppm.",
+        "metrics": {
+            "pm1": "PM1",
+            "pm25": "PM2.5",
+            "pm10": "PM10",
+            "tvoc": "COVT",
+            "nox": "NOx",
+            "co2": "CO₂",
+            "humidex": "Humidex",
+            "aqi": "IQA",
+            "go_iaqs": "GO IAQS"
+        },
+        "levels": {
+            "low": "Faible",
+            "medium": "Moyen",
+            "high": "Élevé",
+            "critical": "Critique",
+            "good": "Bon",
+            "moderate": "Modéré",
+            "unhealthy_sensitive": "Malsain pour les groupes sensibles",
+            "unhealthy": "Malsain",
+            "very_unhealthy": "Très malsain",
+            "hazardous": "Dangereux",
+            "little_discomfort": "Peu d'inconfort",
+            "some_discomfort": "Inconfort léger",
+            "great_discomfort": "Inconfort important",
+            "dangerous": "Dangereux"
+        }
+    }
 }

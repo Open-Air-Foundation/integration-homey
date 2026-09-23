@@ -1,0 +1,31 @@
+{
+  "name": {
+    "en": "Breezy (AQI)",
+    "nl": "Breezy (AQI)",
+    "da": "Breezy (AQI)",
+    "de": "Breezy (AQI)",
+    "es": "Breezy (AQI)",
+    "fr": "Breezy (AQI)",
+    "it": "Breezy (AQI)",
+    "no": "Breezy (AQI)",
+    "sv": "Breezy (AQI)",
+    "pl": "Breezy (AQI)",
+    "ru": "Breezy (AQI)",
+    "ko": "Breezy (AQI)"
+  },
+  "devices": {
+    "type": "app",
+    "singular": true,
+    "filter": {
+      "capabilities": "measure_aqi"
+    }
+  },
+  "height": 252,
+  "transparent": true,
+  "api": {
+    "getStatus": {
+      "method": "GET",
+      "path": "/"
+    }
+  }
+}

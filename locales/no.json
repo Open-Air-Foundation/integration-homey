@@ -1,11 +1,95 @@
 {
-  "device": {
-      "save": "Opprett enhet",
-      "saving": "Verifiserer enhet",
-      "failed": "Enhetsverifisering mislyktes",
-      "create": "Koble til en AirGradient-enhet",
-      "ipAddress": "Enhetens IP-adresse",
-      "ipAddressHelp": "Dette er den unike IP-adressen til din AirGradient-enhet.",
-      "ipAddressRequired": "Vennligst oppgi IP-adressen til din AirGradient-enhet."
-  }
+    "device": {
+        "save": "Opprett enhet",
+        "saving": "Verifiserer enhet",
+        "failed": "Enhetsverifisering mislyktes",
+        "create": "Koble til en AirGradient-enhet",
+        "ipAddress": "Enhetens IP-adresse",
+        "ipAddressHelp": "Dette er den unike IP-adressen til din AirGradient-enhet.",
+        "ipAddressRequired": "Oppgi IP-adressen til din AirGradient-enhet.",
+        "pair": {
+            "list": {
+                "add_by_ip": "Legg til via IP…"
+            },
+            "device_ip": {
+                "title": "Koble til AirGradient-enheten din",
+                "addressLabel": "IP-adresse eller vertsnavn",
+                "addressPlaceholder": "192.168.0.1 eller airgradient.local",
+                "connect": "Koble til"
+            },
+            "apikey": {
+                "title": "Koble til AirGradient-enheten din",
+                "intro": "For å koble til AirGradient via sky-API trenger du et place API-token.",
+                "tokenLabel": "API-token",
+                "continue": "Fortsett",
+                "stepOpen": "Åpne <a id=\"ag-link\" href=\"javascript:void(0);\" target=\"_blank\">AirGradient Dashboard</a>.",
+                "stepSettings": "Åpne <strong>General Settings</strong> → <strong>Connectivity</strong>.",
+                "stepToken": "Aktiver <strong>API access</strong>, kopier tokenet og lim det inn nedenfor."
+            }
+        },
+        "repair": {
+            "device_ip": {
+                "title": "Reparer enhet",
+                "serialLabel": "Serienummer",
+                "serialPlaceholder": "Laster...",
+                "addressLabel": "IP-adresse eller vertsnavn",
+                "addressPlaceholder": "192.168.0.1 eller airgradient.local",
+                "connect": "Koble til",
+                "errorRetrievingSerial": "Feil ved henting av serienummer"
+            },
+            "apikey": {
+                "title": "Reparer enhet"
+            }
+        }
+    },
+    "errors": {
+        "deviceUnreachableAt": "Enheten kan ikke nås på __ipAddress__",
+        "setDeviceConfigFailed": "Kunne ikke oppdatere konfigurasjonen til AirGradient-enheten.",
+        "cloudTokenNotConfigured": "Cloud API-token er ikke konfigurert for dette stedet.",
+        "cloudUnreachable": "AirGradient sky-API-en kan ikke nås.",
+        "co2CalibrationNoToken": "Cloud API-token er ikke konfigurert; kan ikke starte CO₂-kalibrering.",
+        "co2CalibrationFailed": "Kunne ikke starte CO₂-kalibrering via AirGradient sky-API-en.",
+        "co2CalibrationInProgress": "CO₂-kalibrering ble nylig forespurt for denne enheten. Vent omtrent __minutes__ minutt(er) før du prøver igjen.",
+        "ledBarTestFailed": "Kunne ikke starte LED-bar-testen på denne enheten.",
+        "tokenNotValidated": "API-tokenet er ikke validert ennå.",
+        "tokenRequired": "Det kreves et API-token.",
+        "tokenInvalid": "Ugyldig API-token, eller stedet kunne ikke bestemmes.",
+        "noLocations": "Fant ingen steder for dette API-tokenet.",
+        "deviceNotFound": "Kunne ikke koble til en AirGradient-enhet på den adressen.",
+        "wrongDevice": "Adressen du oppga tilhører en annen AirGradient-enhet.",
+        "cloudTokenRejected": "AirGradient API-tokenet ble avvist. Bruk Reparer for å angi et nytt.",
+        "tokenPlaceMismatch": "Dette API-tokenet tilhører et sted som ikke inneholder denne enheten."
+    },
+    "notifications": {
+        "driver_deprecated": "Driveren for __device__ er utdatert. Fjern denne enheten og legg den til på nytt, så den bruker den nye driveren.",
+        "co2_calibration_started": "CO₂-kalibrering startet på __device__. Avlesningene bør stabilisere seg nær 400 ppm innen omtrent 10 minutter.",
+        "co2_calibration_finished": "CO₂-kalibreringen på __device__ bør nå være ferdig. Monitoren bør vise rundt 400 ppm.",
+        "metrics": {
+            "pm1": "PM1",
+            "pm25": "PM2.5",
+            "pm10": "PM10",
+            "tvoc": "TVOC",
+            "nox": "NOx",
+            "co2": "CO₂",
+            "humidex": "Humidex",
+            "aqi": "AQI",
+            "go_iaqs": "GO IAQS"
+        },
+        "levels": {
+            "low": "Lavt",
+            "medium": "Middels",
+            "high": "Høyt",
+            "critical": "Kritisk",
+            "good": "God",
+            "moderate": "Moderat",
+            "unhealthy_sensitive": "Usunt for sensitive grupper",
+            "unhealthy": "Usunt",
+            "very_unhealthy": "Svært usunt",
+            "hazardous": "Farlig",
+            "little_discomfort": "Lite ubehag",
+            "some_discomfort": "Noe ubehag",
+            "great_discomfort": "Stort ubehag",
+            "dangerous": "Farlig"
+        }
+    }
 }

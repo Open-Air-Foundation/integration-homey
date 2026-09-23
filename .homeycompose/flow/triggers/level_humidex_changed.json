@@ -1,0 +1,63 @@
+{
+  "id": "level_humidex_changed",
+  "platforms": [
+    "local",
+    "cloud"
+  ],
+  "title": {
+    "en": "The Humidex comfort level has changed",
+    "nl": "Het Humidex-comfortniveau is veranderd",
+    "da": "Humidex-komfortniveauet er ændret",
+    "de": "Die Humidex-Komfortstufe hat sich geändert",
+    "es": "El nivel de confort de humidex ha cambiado",
+    "fr": "Le niveau de confort humidex a changé",
+    "it": "Il livello di comfort humidex è cambiato",
+    "no": "Humidex-komfortnivået har endret seg",
+    "sv": "Humidex-komfortnivån har ändrats",
+    "pl": "Poziom komfortu humidex uległ zmianie",
+    "ru": "Уровень комфорта по Humidex изменился",
+    "ko": "휴미덱스 쾌적 수준이 변경되었습니다"
+  },
+  "titleFormatted": {
+    "en": "The Humidex comfort level has changed",
+    "nl": "Het Humidex-comfortniveau is veranderd",
+    "da": "Humidex-komfortniveauet er ændret",
+    "de": "Die Humidex-Komfortstufe hat sich geändert",
+    "es": "El nivel de confort de humidex ha cambiado",
+    "fr": "Le niveau de confort humidex a changé",
+    "it": "Il livello di comfort humidex è cambiato",
+    "no": "Humidex-komfortnivået har endret seg",
+    "sv": "Humidex-komfortnivån har ändrats",
+    "pl": "Poziom komfortu humidex uległ zmianie",
+    "ru": "Уровень комфорта по Humidex изменился",
+    "ko": "휴미덱스 쾌적 수준이 변경되었습니다"
+  },
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "filter": "driver_id=indoor-local|outdoor-local|indoor-cloud|outdoor-cloud&capabilities=level_humidex"
+    }
+  ],
+  "tokens": [
+    {
+      "name": "level_humidex",
+      "title": {
+        "en": "Humidex Level",
+        "nl": "Humidex-niveau",
+        "da": "Humidex-niveau",
+        "de": "Humidex-Stufe",
+        "es": "Nivel de humidex",
+        "fr": "Niveau d'humidex",
+        "it": "Livello humidex",
+        "no": "Humidex-nivå",
+        "sv": "Humidex-nivå",
+        "pl": "Poziom humidex",
+        "ru": "Уровень хумидекса",
+        "ko": "휴미덱스 수준"
+      },
+      "type": "string",
+      "example": "little_discomfort"
+    }
+  ]
+}

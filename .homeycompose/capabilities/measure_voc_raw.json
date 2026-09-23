@@ -1,0 +1,37 @@
+{
+  "type": "number",
+  "title": {
+    "en": "VOC Raw",
+    "nl": "VOC ongecorrigeerd",
+    "da": "VOC rå",
+    "de": "VOC-Rohwert",
+    "es": "VOC bruto",
+    "fr": "COV brut",
+    "it": "VOC grezzo",
+    "no": "VOC rå",
+    "sv": "VOC rå",
+    "pl": "VOC surowy",
+    "ru": "VOC (сырой)",
+    "ko": "VOC 원시"
+  },
+  "units": {
+    "en": "ticks",
+    "nl": "ticks",
+    "da": "tællinger",
+    "de": "Zähler",
+    "es": "tics",
+    "fr": "tics",
+    "it": "tic",
+    "no": "tikk",
+    "sv": "tick",
+    "pl": "tyka",
+    "ru": "щелчки",
+    "ko": "틱"
+  },
+  "decimals": 2,
+  "getable": true,
+  "setable": false,
+  "insights": true,
+  "uiComponent": "sensor",
+  "icon": "/assets/capabilities/measure_voc_raw.svg"
+}

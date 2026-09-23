@@ -43,5 +43,8 @@
   },
   "1.2.0": {
     "en": "Dependancy updates"
+  },
+  "2.0.0": {
+    "en": "Major update with new capabilities, Homey Cloud support, Dashboard widgets and general improvements"
   }
 }

@@ -1,7 +1,5 @@
-AirGradient
-Dołącz do nas w walce z zanieczyszczeniem powietrza
-Siedem milionów ludzi umiera każdego roku z powodu zanieczyszczenia powietrza. Monitorowanie jakości powietrza umożliwia ludziom na całym świecie lepszą ochronę siebie.
+Każdego roku siedem milionów ludzi umiera z powodu zanieczyszczenia powietrza. Monitorowanie jakości powietrza pomaga ludziom na całym świecie lepiej się chronić.
 
-Naszą misją jest dostarczenie dokładnego i przystępnego cenowo monitoringu jakości powietrza do każdego zakątka planety, a wspiera nas społeczność ponad 10 000 zaangażowanych obywateli, którzy już uruchomili monitor AirGradient.
+Naszą misją jest zapewnienie dokładnego i niedrogiego monitorowania jakości powietrza w każdym zakątku świata. Wspiera nas społeczność ponad 10 000 zaangażowanych osób, które już zainstalowały monitor AirGradient.
 
-Aby zmaksymalizować nasz wpływ, całkowicie udostępniliśmy i otworzyliśmy nasz projekt monitora, aby inni mogli go rozwijać.
+Aby nasz wpływ był jak największy, udostępniliśmy projekt naszego monitora jako open source, żeby inni mogli go dalej rozwijać.

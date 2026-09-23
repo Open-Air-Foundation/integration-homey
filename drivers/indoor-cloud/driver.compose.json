@@ -1,0 +1,84 @@
+{
+  "$extends": "apikey",
+  "name": {
+    "en": "Indoor Monitor",
+    "nl": "Binnenmonitor",
+    "da": "Indendørs Monitor",
+    "de": "Innenmonitor",
+    "es": "Monitor Interior",
+    "fr": "Moniteur Intérieur",
+    "it": "Monitor Interno",
+    "no": "Innendørs Monitor",
+    "sv": "Inomhus Monitor",
+    "pl": "Monitor Wewnętrzny",
+    "ru": "Внутренний Монитор",
+    "ko": "실내 모니터"
+  },
+  "class": "sensor",
+  "capabilities": [
+    "measure_temperature",
+    "measure_humidity",
+    "measure_dew_point",
+    "measure_absolute_humidity",
+    "measure_humidex",
+    "level_humidex",
+    "measure_co2",
+    "level_co2",
+    "measure_go_iaqs_score",
+    "level_go_iaqs",
+    "measure_pm1",
+    "level_pm1",
+    "measure_pm25",
+    "level_pm25",
+    "measure_pm10",
+    "level_pm10",
+    "measure_nox_idx",
+    "level_nox",
+    "measure_tvoc_index",
+    "level_tvoc",
+    "measure_tvoc",
+    "measure_pm03_cnt",
+    "measure_voc_raw",
+    "measure_nox_raw"
+  ],
+  "capabilitiesOptions": {
+    "measure_humidity": {
+      "title": {
+        "en": "Relative Humidity",
+        "nl": "Relatieve luchtvochtigheid",
+        "da": "Relativ fugtighed",
+        "de": "Relative Luftfeuchtigkeit",
+        "es": "Humedad relativa",
+        "fr": "Humidité relative",
+        "it": "Umidità relativa",
+        "no": "Relativ fuktighet",
+        "sv": "Relativ fuktighet",
+        "pl": "Wilgotność względna",
+        "ru": "Относительная влажность",
+        "ko": "상대 습도"
+      },
+      "icon": "/assets/capabilities/measure_relative_humidity.svg"
+    },
+    "measure_tvoc": {
+      "units": {
+        "en": "ppb",
+        "nl": "ppb",
+        "da": "ppb",
+        "de": "ppb",
+        "es": "ppb",
+        "fr": "ppb",
+        "it": "ppb",
+        "no": "ppb",
+        "sv": "ppb",
+        "pl": "ppb",
+        "ru": "ppb",
+        "ko": "ppb"
+      }
+    }
+  },
+  "energy": {
+    "approximation": {
+      "usageConstant": 1.4
+    }
+  }
+}

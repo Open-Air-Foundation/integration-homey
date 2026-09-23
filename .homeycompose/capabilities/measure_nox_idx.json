@@ -33,5 +33,5 @@
   "setable": false,
   "insights": true,
   "uiComponent": "sensor",
-  "icon": "./assets/measure_noX.svg"
+  "icon": "/assets/capabilities/measure_nox_idx.svg"
 }
