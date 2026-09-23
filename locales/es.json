@@ -1,11 +1,95 @@
 {
-  "device": {
-      "save": "Crear dispositivo",
-      "saving": "Verificando dispositivo",
-      "failed": "Verificación del dispositivo fallida",
-      "create": "Conectar a un dispositivo AirGradient",
-      "ipAddress": "Dirección IP del dispositivo",
-      "ipAddressHelp": "Esta es la dirección IP única de tu dispositivo AirGradient.",
-      "ipAddressRequired": "Por favor, proporciona la dirección IP de tu dispositivo AirGradient."
-  }
+    "device": {
+        "save": "Crear dispositivo",
+        "saving": "Verificando dispositivo",
+        "failed": "Verificación del dispositivo fallida",
+        "create": "Conectar a un dispositivo AirGradient",
+        "ipAddress": "Dirección IP del dispositivo",
+        "ipAddressHelp": "Esta es la dirección IP única de tu dispositivo AirGradient.",
+        "ipAddressRequired": "Por favor, proporciona la dirección IP de tu dispositivo AirGradient.",
+        "pair": {
+            "list": {
+                "add_by_ip": "Añadir por IP…"
+            },
+            "device_ip": {
+                "title": "Conecta tu dispositivo AirGradient",
+                "addressLabel": "Dirección IP o nombre de host",
+                "addressPlaceholder": "192.168.0.1 o airgradient.local",
+                "connect": "Conectar"
+            },
+            "apikey": {
+                "title": "Conecta tu dispositivo AirGradient",
+                "intro": "Para conectar AirGradient a través de la API en la nube, necesitas un token de API del place.",
+                "tokenLabel": "Token de API",
+                "continue": "Continuar",
+                "stepOpen": "Abre el <a id=\"ag-link\" href=\"javascript:void(0);\" target=\"_blank\">AirGradient Dashboard</a>.",
+                "stepSettings": "Abre <strong>General Settings</strong> → <strong>Connectivity</strong>.",
+                "stepToken": "Activa <strong>API access</strong>, copia el token y pégalo abajo."
+            }
+        },
+        "repair": {
+            "device_ip": {
+                "title": "Reparar el dispositivo",
+                "serialLabel": "Número de serie",
+                "serialPlaceholder": "Cargando...",
+                "addressLabel": "Dirección IP o nombre de host",
+                "addressPlaceholder": "192.168.0.1 o airgradient.local",
+                "connect": "Conectar",
+                "errorRetrievingSerial": "Error al obtener el número de serie"
+            },
+            "apikey": {
+                "title": "Reparar dispositivo"
+            }
+        }
+    },
+    "errors": {
+        "deviceUnreachableAt": "No se puede acceder al dispositivo en __ipAddress__",
+        "setDeviceConfigFailed": "No se pudo actualizar la configuración del dispositivo AirGradient.",
+        "cloudTokenNotConfigured": "El token de la API en la nube no está configurado para este lugar.",
+        "cloudUnreachable": "No se puede acceder a la API en la nube de AirGradient.",
+        "co2CalibrationNoToken": "El token de la API en la nube no está configurado; no se puede iniciar la calibración de CO₂.",
+        "co2CalibrationFailed": "No se pudo iniciar la calibración de CO₂ a través de la API en la nube de AirGradient.",
+        "co2CalibrationInProgress": "Se solicitó recientemente una calibración de CO₂ para este dispositivo. Espera unos __minutes__ minuto(s) antes de intentarlo de nuevo.",
+        "ledBarTestFailed": "No se pudo iniciar la prueba de la barra LED en este dispositivo.",
+        "tokenNotValidated": "El token de la API aún no se ha validado.",
+        "tokenRequired": "Se requiere un token de la API.",
+        "tokenInvalid": "Token de la API no válido o no se pudo resolver el lugar.",
+        "noLocations": "No se encontraron ubicaciones para este token de la API.",
+        "deviceNotFound": "No se pudo conectar a un dispositivo AirGradient en esa dirección.",
+        "wrongDevice": "La dirección que introdujiste pertenece a otro dispositivo AirGradient.",
+        "cloudTokenRejected": "El token de la API de AirGradient fue rechazado. Usa Reparar para introducir uno nuevo.",
+        "tokenPlaceMismatch": "Este token de API pertenece a un lugar que no contiene este dispositivo."
+    },
+    "notifications": {
+        "driver_deprecated": "El driver de __device__ está obsoleto. Elimina este dispositivo y vuelve a añadirlo para que use el nuevo driver.",
+        "co2_calibration_started": "Calibración de CO₂ iniciada en __device__. Las lecturas deberían estabilizarse cerca de 400 ppm en unos 10 minutos.",
+        "co2_calibration_finished": "La calibración de CO₂ en __device__ debería haber terminado. El monitor debería indicar alrededor de 400 ppm.",
+        "metrics": {
+            "pm1": "PM1",
+            "pm25": "PM2.5",
+            "pm10": "PM10",
+            "tvoc": "TVOC",
+            "nox": "NOx",
+            "co2": "CO₂",
+            "humidex": "Humidex",
+            "aqi": "ICA",
+            "go_iaqs": "GO IAQS"
+        },
+        "levels": {
+            "low": "Bajo",
+            "medium": "Intermedio",
+            "high": "Alto",
+            "critical": "Crítico",
+            "good": "Bueno",
+            "moderate": "Moderado",
+            "unhealthy_sensitive": "Poco saludable para grupos sensibles",
+            "unhealthy": "Poco saludable",
+            "very_unhealthy": "Muy poco saludable",
+            "hazardous": "Peligroso",
+            "little_discomfort": "Poco malestar",
+            "some_discomfort": "Algo de malestar",
+            "great_discomfort": "Gran malestar",
+            "dangerous": "Peligroso"
+        }
+    }
 }

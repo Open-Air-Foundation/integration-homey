@@ -1,0 +1,63 @@
+{
+  "id": "level_go_iaqs_changed",
+  "platforms": [
+    "local",
+    "cloud"
+  ],
+  "title": {
+    "en": "The GO IAQS level has changed",
+    "nl": "Het GO IAQS-niveau is veranderd",
+    "da": "GO IAQS-niveauet er ændret",
+    "de": "Die GO-IAQS-Stufe hat sich geändert",
+    "es": "El nivel GO IAQS ha cambiado",
+    "fr": "Le niveau GO IAQS a changé",
+    "it": "Il livello GO IAQS è cambiato",
+    "no": "GO IAQS-nivået har endret seg",
+    "sv": "GO IAQS-nivån har ändrats",
+    "pl": "Poziom GO IAQS uległ zmianie",
+    "ru": "Уровень GO IAQS изменился",
+    "ko": "GO IAQS 수준이 변경되었습니다"
+  },
+  "titleFormatted": {
+    "en": "The GO IAQS level has changed",
+    "nl": "Het GO IAQS-niveau is veranderd",
+    "da": "GO IAQS-niveauet er ændret",
+    "de": "Die GO-IAQS-Stufe hat sich geändert",
+    "es": "El nivel GO IAQS ha cambiado",
+    "fr": "Le niveau GO IAQS a changé",
+    "it": "Il livello GO IAQS è cambiato",
+    "no": "GO IAQS-nivået har endret seg",
+    "sv": "GO IAQS-nivån har ändrats",
+    "pl": "Poziom GO IAQS uległ zmianie",
+    "ru": "Уровень GO IAQS изменился",
+    "ko": "GO IAQS 수준이 변경되었습니다"
+  },
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "filter": "driver_id=indoor-local|indoor-cloud&capabilities=level_go_iaqs"
+    }
+  ],
+  "tokens": [
+    {
+      "name": "level_go_iaqs",
+      "title": {
+        "en": "GO IAQS Level",
+        "nl": "GO IAQS-niveau",
+        "da": "GO IAQS-niveau",
+        "de": "GO-IAQS-Stufe",
+        "es": "Nivel GO IAQS",
+        "fr": "Niveau GO IAQS",
+        "it": "Livello GO IAQS",
+        "no": "GO IAQS-nivå",
+        "sv": "GO IAQS-nivå",
+        "pl": "Poziom GO IAQS",
+        "ru": "Уровень GO IAQS",
+        "ko": "GO IAQS 수준"
+      },
+      "type": "string",
+      "example": "good"
+    }
+  ]
+}

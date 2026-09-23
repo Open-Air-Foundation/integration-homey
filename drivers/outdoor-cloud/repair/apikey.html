@@ -1,0 +1,211 @@
+<style>
+  @import '/css/deprecated-login-credentials.css';
+
+  html {
+    height: 100%;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    height: 100%;
+    margin: 0;
+  }
+
+  .__private__homey-login-credentials {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+    height: 100%;
+    box-sizing: border-box;
+  }
+
+  .__private__homey-login-credentials__form {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    min-height: 0;
+    height: 100%;
+    box-sizing: border-box;
+  }
+
+  .__private__homey-login-credentials__center {
+    width: 100%;
+    flex-shrink: 0;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+
+  .pair-view-flex-spacer {
+    flex-grow: 1;
+    flex-shrink: 0;
+    min-height: var(--homey-su-2);
+  }
+
+  .__private__homey-login-credentials__footer {
+    flex-shrink: 0;
+  }
+
+  #login-credentials-logo {
+    display: block;
+    width: auto;
+    max-width: 280px;
+    max-height: 72px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: var(--homey-su-4);
+    object-fit: contain;
+  }
+
+  .ag-apikey-help {
+    margin-bottom: var(--homey-su-4);
+  }
+
+  .ag-apikey-help ol {
+    margin: var(--homey-su-2) 0 0;
+    padding-left: 1.25em;
+  }
+
+  .ag-apikey-help ol strong {
+    font-weight: bold;
+  }
+
+  #ag-link {
+    color: rgb(0, 130, 250);
+  }
+</style>
+
+<div class="__private__homey-login-credentials">
+  <form
+    id="apikey-form"
+    class="__private__homey-login-credentials__form homey-form"
+    action="/"
+    method="post"
+  >
+    <div class="__private__homey-login-credentials__center">
+      <img
+        id="login-credentials-logo"
+        src="apikey.assets/logo.png"
+        alt=""
+      />
+      <h1
+        id="login-credentials-title"
+        class="homey-title homey-text-align-center"
+        data-i18n="device.repair.apikey.title"
+      ></h1>
+
+      <div class="ag-apikey-help">
+        <p data-i18n="device.pair.apikey.intro"></p>
+        <ol>
+          <li data-i18n-html="device.pair.apikey.stepOpen"></li>
+          <li data-i18n-html="device.pair.apikey.stepSettings"></li>
+          <li data-i18n-html="device.pair.apikey.stepToken"></li>
+        </ol>
+      </div>
+
+      <div class="homey-form-group-large">
+        <label
+          class="homey-form-label"
+          for="ag-apikey"
+          data-i18n="device.pair.apikey.tokenLabel"
+        ></label>
+        <input
+          class="homey-form-input-large"
+          id="ag-apikey"
+          type="text"
+          value=""
+          minlength="36"
+          maxlength="36"
+          autocomplete="off"
+          spellcheck="false"
+          placeholder="xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
+          style="font-family: monospace; text-align: center;"
+        />
+      </div>
+    </div>
+
+    <div class="pair-view-flex-spacer" aria-hidden="true"></div>
+
+    <div class="__private__homey-login-credentials__footer">
+      <button
+        tabindex="0"
+        class="homey-button-primary-shadow-full __private__homey-login-credentials__button"
+        id="ag-validate"
+        data-i18n="device.pair.apikey.continue"
+        type="submit"
+        disabled="disabled"
+      ></button>
+    </div>
+  </form>
+</div>
+
+<script type="text/javascript">
+  (function () {
+    Homey.setTitle(null);
+
+    document.querySelectorAll('[data-i18n-html]').forEach(function (el) {
+      el.innerHTML = Homey.__(el.getAttribute('data-i18n-html'));
+    });
+
+    document.getElementById('ag-link').addEventListener('click', function () {
+      Homey.popup('https://app.airgradient.com');
+    });
+
+    Homey.showLoadingOverlay();
+
+    Homey.emit('getSavedToken')
+      .then(function (savedToken) {
+        Homey.hideLoadingOverlay();
+
+        var $form = document.getElementById('apikey-form');
+        var $apikey = document.getElementById('ag-apikey');
+        var $validate = document.getElementById('ag-validate');
+
+        if (savedToken) {
+          $apikey.value = savedToken;
+        }
+
+        function updateButtonState() {
+          if ($apikey.value.trim().length === 36) {
+            $validate.removeAttribute('disabled');
+          } else {
+            $validate.setAttribute('disabled', 'disabled');
+          }
+        }
+
+        updateButtonState();
+
+        ['keyup', 'change', 'blur', 'paste', 'input'].forEach(function (event) {
+          $apikey.addEventListener(event, updateButtonState);
+        });
+
+        $form.addEventListener('submit', function (event) {
+          event.preventDefault();
+
+          if ($validate.classList.contains('is-loading')) return false;
+          $validate.classList.add('is-loading');
+
+          Homey.emit('validateKey', $apikey.value.trim())
+            .then(function (valid) {
+              if (valid) return Homey.done();
+              Homey.alert(Homey.__('errors.tokenInvalid'));
+            })
+            .catch(function (err) {
+              Homey.alert(err && err.message ? err.message : String(err));
+            })
+            .finally(function () {
+              $validate.classList.remove('is-loading');
+            });
+
+          return false;
+        });
+      })
+      .catch(function (err) {
+        Homey.hideLoadingOverlay();
+        Homey.alert(err && err.message ? err.message : String(err));
+      });
+  })();
+</script>

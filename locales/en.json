@@ -6,6 +6,94 @@
         "create": "Connect to an AirGradient device",
         "ipAddress": "Device IP Address",
         "ipAddressHelp": "This is the unique IP address of your AirGradient device.",
-        "ipAddressRequired": "Please provide the IP address of your AirGradient device."
+        "ipAddressRequired": "Please provide the IP address of your AirGradient device.",
+        "pair": {
+            "list": {
+                "add_by_ip": "Add by IP…"
+            },
+            "device_ip": {
+                "title": "Connect to your AirGradient device",
+                "addressLabel": "IP address or hostname",
+                "addressPlaceholder": "192.168.0.1 or airgradient.local",
+                "connect": "Connect"
+            },
+            "apikey": {
+                "title": "Connect to your AirGradient device",
+                "intro": "To connect AirGradient via the cloud API, you need a place API token.",
+                "tokenLabel": "API token",
+                "continue": "Continue",
+                "stepOpen": "Open the <a id=\"ag-link\" href=\"javascript:void(0);\" target=\"_blank\">AirGradient Dashboard</a>.",
+                "stepSettings": "Open <strong>General Settings</strong> → <strong>Connectivity</strong>.",
+                "stepToken": "Enable <strong>API access</strong>, copy the token, and paste it below."
+            }
+        },
+        "repair": {
+            "device_ip": {
+                "title": "Repair device",
+                "serialLabel": "Serial number",
+                "serialPlaceholder": "Loading...",
+                "addressLabel": "IP address or hostname",
+                "addressPlaceholder": "192.168.0.1 or airgradient.local",
+                "connect": "Connect",
+                "errorRetrievingSerial": "Error retrieving serial number"
+            },
+            "apikey": {
+                "title": "Repair device"
+            }
+        }
+    },
+    "errors": {
+        "deviceUnreachableAt": "Device is not reachable at __ipAddress__",
+        "deviceNotFound": "Could not connect to an AirGradient device at that address.",
+        "wrongDevice": "The address you entered belongs to a different AirGradient device.",
+        "setDeviceConfigFailed": "Failed to update the AirGradient device configuration.",
+        "cloudTokenNotConfigured": "Cloud API token is not configured for this place.",
+        "cloudUnreachable": "The AirGradient cloud API is not reachable.",
+        "co2CalibrationNoToken": "Cloud API token is not configured; cannot trigger CO₂ calibration.",
+        "co2CalibrationFailed": "Failed to trigger CO₂ calibration on the AirGradient cloud API.",
+        "co2CalibrationInProgress": "CO₂ calibration was recently requested for this device. Please wait about __minutes__ minute(s) before trying again.",
+        "ledBarTestFailed": "Failed to start the LED bar test on this device.",
+        "tokenNotValidated": "The API token has not been validated yet.",
+        "tokenRequired": "An API token is required.",
+        "tokenInvalid": "Invalid API token or the place could not be resolved.",
+        "noLocations": "No locations were found for this API token.",
+        "cloudTokenRejected": "The AirGradient API token was rejected. Use Repair to enter a new one.",
+        "tokenPlaceMismatch": "This API token belongs to a place that does not contain this device."
+    },
+    "notifications": {
+        "level_high": "__device__ reported a __level__ __metric__ level ⚠️",
+        "level_high_go_iaqs_pm25": "__device__ reported an unhealthy GO IAQS level, mainly from PM2.5 ⚠️",
+        "level_high_go_iaqs_co2": "__device__ reported an unhealthy GO IAQS level, mainly from CO₂ ⚠️",
+        "level_high_go_iaqs_both": "__device__ reported an unhealthy GO IAQS level from PM2.5 and CO₂ ⚠️",
+        "driver_deprecated": "The driver for __device__ is deprecated. Please remove this device and re-add it so that it uses the new driver.",
+        "co2_calibration_started": "CO₂ calibration started on __device__. Readings should stabilize near 400 ppm within about 10 minutes.",
+        "co2_calibration_finished": "CO₂ calibration on __device__ should now be finished. The monitor should read around 400 ppm.",
+        "metrics": {
+            "pm1": "PM1",
+            "pm25": "PM2.5",
+            "pm10": "PM10",
+            "tvoc": "TVOC",
+            "nox": "NOx",
+            "co2": "CO₂",
+            "humidex": "Humidex",
+            "aqi": "AQI",
+            "go_iaqs": "GO IAQS"
+        },
+        "levels": {
+            "low": "Low",
+            "medium": "Medium",
+            "high": "High",
+            "critical": "Critical",
+            "good": "Good",
+            "moderate": "Moderate",
+            "unhealthy_sensitive": "Unhealthy for Sensitive Groups",
+            "unhealthy": "Unhealthy",
+            "very_unhealthy": "Very Unhealthy",
+            "hazardous": "Hazardous",
+            "little_discomfort": "Little discomfort",
+            "some_discomfort": "Some discomfort",
+            "great_discomfort": "Great discomfort",
+            "dangerous": "Dangerous"
+        }
     }
 }

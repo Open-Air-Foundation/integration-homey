@@ -1,11 +1,95 @@
 {
-  "device": {
-      "save": "Skapa enhet",
-      "saving": "Verifierar enhet",
-      "failed": "Enhetsverifiering misslyckades",
-      "create": "Anslut till en AirGradient-enhet",
-      "ipAddress": "Enhetens IP-adress",
-      "ipAddressHelp": "Detta är den unika IP-adressen till din AirGradient-enhet.",
-      "ipAddressRequired": "Vänligen ange IP-adressen till din AirGradient-enhet."
-  }
+    "device": {
+        "save": "Skapa enhet",
+        "saving": "Verifierar enhet",
+        "failed": "Enhetsverifiering misslyckades",
+        "create": "Anslut till en AirGradient-enhet",
+        "ipAddress": "Enhetens IP-adress",
+        "ipAddressHelp": "Detta är den unika IP-adressen till din AirGradient-enhet.",
+        "ipAddressRequired": "Ange IP-adressen till din AirGradient-enhet.",
+        "pair": {
+            "list": {
+                "add_by_ip": "Lägg till via IP…"
+            },
+            "device_ip": {
+                "title": "Anslut till din AirGradient-enhet",
+                "addressLabel": "IP-adress eller värdnamn",
+                "addressPlaceholder": "192.168.0.1 eller airgradient.local",
+                "connect": "Anslut"
+            },
+            "apikey": {
+                "title": "Anslut till din AirGradient-enhet",
+                "intro": "För att ansluta AirGradient via moln-API behöver du en place API-token.",
+                "tokenLabel": "API-token",
+                "continue": "Fortsätt",
+                "stepOpen": "Öppna <a id=\"ag-link\" href=\"javascript:void(0);\" target=\"_blank\">AirGradient Dashboard</a>.",
+                "stepSettings": "Öppna <strong>General Settings</strong> → <strong>Connectivity</strong>.",
+                "stepToken": "Aktivera <strong>API access</strong>, kopiera tokenen och klistra in den nedan."
+            }
+        },
+        "repair": {
+            "device_ip": {
+                "title": "Reparera enhet",
+                "serialLabel": "Serienummer",
+                "serialPlaceholder": "Laddar...",
+                "addressLabel": "IP-adress eller värdnamn",
+                "addressPlaceholder": "192.168.0.1 eller airgradient.local",
+                "connect": "Anslut",
+                "errorRetrievingSerial": "Fel vid hämtning av serienummer"
+            },
+            "apikey": {
+                "title": "Reparera enhet"
+            }
+        }
+    },
+    "errors": {
+        "deviceUnreachableAt": "Enheten kan inte nås på __ipAddress__",
+        "setDeviceConfigFailed": "Det gick inte att uppdatera AirGradient-enhetens konfiguration.",
+        "cloudTokenNotConfigured": "Cloud API-token är inte konfigurerad för denna plats.",
+        "cloudUnreachable": "AirGradient moln-API:t kan inte nås.",
+        "co2CalibrationNoToken": "Cloud API-token är inte konfigurerad; kan inte starta CO₂-kalibrering.",
+        "co2CalibrationFailed": "Det gick inte att starta CO₂-kalibrering via AirGradient moln-API:t.",
+        "co2CalibrationInProgress": "CO₂-kalibrering begärdes nyligen för den här enheten. Vänta ungefär __minutes__ minut(er) innan du försöker igen.",
+        "ledBarTestFailed": "Det gick inte att starta LED-bartestet på den här enheten.",
+        "tokenNotValidated": "API-token har inte validerats än.",
+        "tokenRequired": "En API-token krävs.",
+        "tokenInvalid": "Ogiltig API-token eller så kunde platsen inte hittas.",
+        "noLocations": "Inga platser hittades för denna API-token.",
+        "deviceNotFound": "Kunde inte ansluta till en AirGradient-enhet på den adressen.",
+        "wrongDevice": "Adressen du angav tillhör en annan AirGradient-enhet.",
+        "cloudTokenRejected": "AirGradient API-token avvisades. Använd Reparera för att ange en ny.",
+        "tokenPlaceMismatch": "Denna API-token tillhör en plats som inte innehåller den här enheten."
+    },
+    "notifications": {
+        "driver_deprecated": "Drivern för __device__ är föråldrad. Ta bort den här enheten och lägg till den igen så att den använder den nya drivern.",
+        "co2_calibration_started": "CO₂-kalibrering startad på __device__. Avläsningarna bör stabiliseras nära 400 ppm inom cirka 10 minuter.",
+        "co2_calibration_finished": "CO₂-kalibreringen på __device__ bör nu vara klar. Monitorn bör visa runt 400 ppm.",
+        "metrics": {
+            "pm1": "PM1",
+            "pm25": "PM2.5",
+            "pm10": "PM10",
+            "tvoc": "TVOC",
+            "nox": "NOx",
+            "co2": "CO₂",
+            "humidex": "Humidex",
+            "aqi": "AQI",
+            "go_iaqs": "GO IAQS"
+        },
+        "levels": {
+            "low": "Låg",
+            "medium": "Medium",
+            "high": "Hög",
+            "critical": "Kritisk",
+            "good": "Bra",
+            "moderate": "Måttlig",
+            "unhealthy_sensitive": "Ohälsosamt för känsliga grupper",
+            "unhealthy": "Ohälsosamt",
+            "very_unhealthy": "Mycket ohälsosamt",
+            "hazardous": "Farligt",
+            "little_discomfort": "Litet obehag",
+            "some_discomfort": "Visst obehag",
+            "great_discomfort": "Stort obehag",
+            "dangerous": "Farligt"
+        }
+    }
 }

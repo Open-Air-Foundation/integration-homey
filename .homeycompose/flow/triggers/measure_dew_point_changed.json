@@ -1,0 +1,63 @@
+{
+  "id": "measure_dew_point_changed",
+  "platforms": [
+    "local",
+    "cloud"
+  ],
+  "title": {
+    "en": "The Dew Point value has changed",
+    "nl": "De dauwpuntwaarde is veranderd",
+    "da": "Dugpunktværdien er ændret",
+    "de": "Der Taupunktwert hat sich geändert",
+    "es": "El valor del punto de rocío ha cambiado",
+    "fr": "La valeur du point de rosée a changé",
+    "it": "Il valore del punto di rugiada è cambiato",
+    "no": "Duggpunktverdien har endret seg",
+    "sv": "Daggpunktsvärdet har ändrats",
+    "pl": "Wartość punktu rosy uległa zmianie",
+    "ru": "Значение точки росы изменилось",
+    "ko": "이슬점 값이 변경되었습니다"
+  },
+  "titleFormatted": {
+    "en": "The Dew Point value has changed",
+    "nl": "De dauwpuntwaarde is veranderd",
+    "da": "Dugpunktværdien er ændret",
+    "de": "Der Taupunktwert hat sich geändert",
+    "es": "El valor del punto de rocío ha cambiado",
+    "fr": "La valeur du point de rosée a changé",
+    "it": "Il valore del punto di rugiada è cambiato",
+    "no": "Duggpunktverdien har endret seg",
+    "sv": "Daggpunktsvärdet har ändrats",
+    "pl": "Wartość punktu rosy uległa zmianie",
+    "ru": "Значение точки росы изменилось",
+    "ko": "이슬점 값이 변경되었습니다"
+  },
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "filter": "driver_id=indoor-local|outdoor-local|indoor-cloud|outdoor-cloud&capabilities=measure_dew_point"
+    }
+  ],
+  "tokens": [
+    {
+      "name": "measure_dew_point",
+      "title": {
+        "en": "Dew Point",
+        "nl": "Dauwpunt",
+        "da": "Dugpunkt",
+        "de": "Taupunkt",
+        "es": "Punto de rocío",
+        "fr": "Point de rosée",
+        "it": "Punto di rugiada",
+        "no": "Duggpunkt",
+        "sv": "Daggpunkt",
+        "pl": "Punkt rosy",
+        "ru": "Точка росы",
+        "ko": "이슬점"
+      },
+      "type": "number",
+      "example": 12.5
+    }
+  ]
+}

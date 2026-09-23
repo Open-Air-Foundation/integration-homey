@@ -1,0 +1,37 @@
+{
+  "type": "number",
+  "title": {
+    "en": "Dew Point",
+    "nl": "Dauwpunt",
+    "da": "Dugpunkt",
+    "de": "Taupunkt",
+    "es": "Punto de rocío",
+    "fr": "Point de rosée",
+    "it": "Punto di rugiada",
+    "no": "Duggpunkt",
+    "sv": "Daggpunkt",
+    "pl": "Punkt rosy",
+    "ru": "Точка росы",
+    "ko": "이슬점"
+  },
+  "units": {
+    "en": "°C",
+    "nl": "°C",
+    "da": "°C",
+    "de": "°C",
+    "es": "°C",
+    "fr": "°C",
+    "it": "°C",
+    "no": "°C",
+    "sv": "°C",
+    "pl": "°C",
+    "ru": "°C",
+    "ko": "°C"
+  },
+  "decimals": 1,
+  "getable": true,
+  "setable": false,
+  "insights": true,
+  "uiComponent": "sensor",
+  "icon": "/assets/capabilities/measure_dew_point.svg"
+}

@@ -1,0 +1,37 @@
+{
+  "type": "number",
+  "title": {
+    "en": "NOx Raw",
+    "nl": "NOx ongecorrigeerd",
+    "da": "NOx rå",
+    "de": "NOx-Rohwert",
+    "es": "NOx bruto",
+    "fr": "NOx brut",
+    "it": "NOx grezzo",
+    "no": "NOx rå",
+    "sv": "NOx rå",
+    "pl": "NOx surowy",
+    "ru": "NOx (сырой)",
+    "ko": "NOx 원시"
+  },
+  "units": {
+    "en": "ticks",
+    "nl": "ticks",
+    "da": "tællinger",
+    "de": "Ticks",
+    "es": "clics",
+    "fr": "coups",
+    "it": "ticchetti",
+    "no": "tikk",
+    "sv": "tikk",
+    "pl": "tyknięcia",
+    "ru": "тики",
+    "ko": "틱"
+  },
+  "decimals": 0,
+  "getable": true,
+  "setable": false,
+  "insights": true,
+  "uiComponent": "sensor",
+  "icon": "/assets/capabilities/measure_nox_raw.svg"
+}

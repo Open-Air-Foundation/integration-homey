@@ -1,0 +1,56 @@
+{
+  "id": "request_co2_calibration",
+  "platforms": [
+    "local",
+    "cloud"
+  ],
+  "title": {
+    "en": "Calibrate CO₂ sensor",
+    "nl": "Kalibreer CO₂-sensor",
+    "da": "Kalibrér CO₂-sensor",
+    "de": "CO₂-Sensor kalibrieren",
+    "es": "Calibrar sensor de CO₂",
+    "fr": "Étalonner le capteur CO₂",
+    "it": "Calibra sensore CO₂",
+    "no": "Kalibrer CO₂-sensor",
+    "sv": "Kalibrera CO₂-sensor",
+    "pl": "Skalibruj czujnik CO₂",
+    "ru": "Калибровать датчик CO₂",
+    "ko": "CO₂ 센서 보정"
+  },
+  "titleFormatted": {
+    "en": "Calibrate CO₂ sensor",
+    "nl": "Kalibreer CO₂-sensor",
+    "da": "Kalibrér CO₂-sensor",
+    "de": "CO₂-Sensor kalibrieren",
+    "es": "Calibrar sensor de CO₂",
+    "fr": "Étalonner le capteur CO₂",
+    "it": "Calibra sensore CO₂",
+    "no": "Kalibrer CO₂-sensor",
+    "sv": "Kalibrera CO₂-sensor",
+    "pl": "Skalibruj czujnik CO₂",
+    "ru": "Калибровать датчик CO₂",
+    "ko": "CO₂ 센서 보정"
+  },
+  "hint": {
+    "en": "Triggers a forced CO₂ calibration to 400 ppm. Ventilate the room or place the monitor outdoors for at least 20 minutes first. Calibration takes about 10 minutes for readings to stabilize.",
+    "nl": "Start een geforceerde CO₂-kalibratie naar 400 ppm. Zorg eerst voor ventilatie of plaats de monitor minstens 20 minuten buiten. De kalibratie duurt ongeveer 10 minuten tot de waarden stabiliseren.",
+    "da": "Udløser en tvungen CO₂-kalibrering til 400 ppm. Ventiler rummet eller placer monitoren udendørs i mindst 20 minutter først. Kalibreringen tager ca. 10 minutter, før aflæsningerne stabiliserer sig.",
+    "de": "Löst eine erzwungene CO₂-Kalibrierung auf 400 ppm aus. Lüfte den Raum oder stelle den Monitor zuerst mindestens 20 Minuten nach draußen. Die Kalibrierung dauert etwa 10 Minuten, bis sich die Werte stabilisieren.",
+    "es": "Activa una calibración forzada de CO₂ a 400 ppm. Ventila la habitación o coloca el monitor al aire libre durante al menos 20 minutos primero. La calibración tarda unos 10 minutos en estabilizar las lecturas.",
+    "fr": "Déclenche un étalonnage CO₂ forcé à 400 ppm. Aère la pièce ou place d'abord le moniteur à l'extérieur pendant au moins 20 minutes. L'étalonnage prend environ 10 minutes pour que les lectures se stabilisent.",
+    "it": "Attiva una calibrazione CO₂ forzata a 400 ppm. Aera la stanza o posiziona prima il monitor all'aperto per almeno 20 minuti. La calibrazione richiede circa 10 minuti affinché le letture si stabilizzino.",
+    "no": "Utøser en tvungen CO₂-kalibrering til 400 ppm. Ventiler rommet eller plasser monitoren utendørs i minst 20 minutter først. Kalibreringen tar ca. 10 minutter før avlesningene stabiliserer seg.",
+    "sv": "Utlöser en tvungen CO₂-kalibrering till 400 ppm. Ventilera rummet eller placera monitorn utomhus i minst 20 minuter först. Kalibreringen tar cirka 10 minuter innan värdena stabiliserats.",
+    "pl": "Wyzwala wymuszoną kalibrację CO₂ do 400 ppm. Najpierw przewietrz pomieszczenie lub umieść monitor na zewnątrz przez co najmniej 20 minut. Kalibracja trwa około 10 minut, aż odczyty się ustabilizują.",
+    "ru": "Запускает принудительную калибровку CO₂ до 400 ppm. Сначала проветрите помещение или разместите монитор на улице не менее 20 минут. Калибровка занимает около 10 минут, пока показания стабилизируются.",
+    "ko": "CO₂를 400 ppm으로 강제 보정합니다. 먼저 방을 환기하거나 모니터를 최소 20분간 실외에 두세요. 보정이 안정되기까지 약 10분이 걸립니다."
+  },
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "filter": "driver_id=indoor-local|outdoor-local|indoor-cloud|outdoor-cloud|indoor|outdoor&capabilities=measure_co2"
+    }
+  ]
+}

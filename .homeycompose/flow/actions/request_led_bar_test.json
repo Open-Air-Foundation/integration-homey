@@ -1,0 +1,55 @@
+{
+  "id": "request_led_bar_test",
+  "platforms": [
+    "local"
+  ],
+  "title": {
+    "en": "Test LED bar",
+    "nl": "Test LED-balk",
+    "da": "Test LED-bar",
+    "de": "LED-Leiste testen",
+    "es": "Probar barra LED",
+    "fr": "Tester la barre LED",
+    "it": "Testa barra LED",
+    "no": "Test LED-bar",
+    "sv": "Testa LED-baren",
+    "pl": "Przetestuj pasek LED",
+    "ru": "Проверить LED-полосу",
+    "ko": "LED 바 테스트"
+  },
+  "titleFormatted": {
+    "en": "Test LED bar",
+    "nl": "Test LED-balk",
+    "da": "Test LED-bar",
+    "de": "LED-Leiste testen",
+    "es": "Probar barra LED",
+    "fr": "Tester la barre LED",
+    "it": "Testa barra LED",
+    "no": "Test LED-bar",
+    "sv": "Testa LED-baren",
+    "pl": "Przetestuj pasek LED",
+    "ru": "Проверить LED-полосу",
+    "ko": "LED 바 테스트"
+  },
+  "hint": {
+    "en": "Runs the LED bar test sequence on the Indoor Monitor so you can verify the LEDs light correctly.",
+    "nl": "Start de LED-balk testsequentie op de Binnenmonitor zodat je kunt controleren of de LEDs goed branden.",
+    "da": "Kører LED-bar-testsekvensen på Indendørs Monitoren, så du kan kontrollere, at LED'erne lyser korrekt.",
+    "de": "Startet die Testsequenz der LED-Leiste am Innenmonitor, damit du prüfen kannst, ob die LEDs korrekt leuchten.",
+    "es": "Ejecuta la secuencia de prueba de la barra LED en el Monitor Interior para comprobar que los LED se encienden correctamente.",
+    "fr": "Lance la séquence de test de la barre LED sur le Moniteur Intérieur pour vérifier que les LED s'allument correctement.",
+    "it": "Esegue la sequenza di test della barra LED sul Monitor Interno per verificare che i LED si accendano correttamente.",
+    "no": "Kjører LED-bar-testsekvensen på Innendørs Monitoren slik at du kan kontrollere at LED-ene lyser riktig.",
+    "sv": "Kör LED-barens testsekvens på Inomhus Monitorn så att du kan kontrollera att LED-lamporna lyser korrekt.",
+    "pl": "Uruchamia sekwencję testową paska LED na Monitorze Wewnętrznym, aby sprawdzić, czy diody świecą prawidłowo.",
+    "ru": "Запускает тестовую последовательность LED-полосы на Внутреннем Мониторе, чтобы проверить, что светодиоды работают правильно.",
+    "ko": "실내 모니터에서 LED 바 테스트 시퀀스를 실행하여 LED가 올바르게 켜지는지 확인합니다."
+  },
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "filter": "driver_id=indoor-local&capabilities=led_bar_mode"
+    }
+  ]
+}

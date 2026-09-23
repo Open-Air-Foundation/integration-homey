@@ -1,0 +1,63 @@
+{
+  "id": "measure_nox_raw_changed",
+  "platforms": [
+    "local",
+    "cloud"
+  ],
+  "title": {
+    "en": "The NOx Raw value has changed",
+    "nl": "De ongecorrigeerde NOx-waarde is veranderd",
+    "da": "Den rå NOx-værdi er ændret",
+    "de": "Der NOx-Rohwert hat sich geändert",
+    "es": "El valor bruto de NOx ha cambiado",
+    "fr": "La valeur brute de NOx a changé",
+    "it": "Il valore NOx grezzo è cambiato",
+    "no": "Den rå NOx-verdien har endret seg",
+    "sv": "Det råa NOx-värdet har ändrats",
+    "pl": "Surowa wartość NOx uległa zmianie",
+    "ru": "Сырое значение NOx изменилось",
+    "ko": "NOx 원시 값이 변경되었습니다"
+  },
+  "titleFormatted": {
+    "en": "The NOx Raw value has changed",
+    "nl": "De ongecorrigeerde NOx-waarde is veranderd",
+    "da": "Den rå NOx-værdi er ændret",
+    "de": "Der NOx-Rohwert hat sich geändert",
+    "es": "El valor bruto de NOx ha cambiado",
+    "fr": "La valeur brute de NOx a changé",
+    "it": "Il valore NOx grezzo è cambiato",
+    "no": "Den rå NOx-verdien har endret seg",
+    "sv": "Det råa NOx-värdet har ändrats",
+    "pl": "Surowa wartość NOx uległa zmianie",
+    "ru": "Сырое значение NOx изменилось",
+    "ko": "NOx 원시 값이 변경되었습니다"
+  },
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "filter": "driver_id=indoor-local|outdoor-local|indoor-cloud|outdoor-cloud&capabilities=measure_nox_raw"
+    }
+  ],
+  "tokens": [
+    {
+      "name": "measure_nox_raw",
+      "title": {
+        "en": "NOx Raw",
+        "nl": "NOx ongecorrigeerd",
+        "da": "NOx rå",
+        "de": "NOx-Rohwert",
+        "es": "NOx bruto",
+        "fr": "NOx brut",
+        "it": "NOx grezzo",
+        "no": "NOx rå",
+        "sv": "NOx rå",
+        "pl": "NOx surowy",
+        "ru": "NOx (сырой)",
+        "ko": "NOx 원시"
+      },
+      "type": "number",
+      "example": 2
+    }
+  ]
+}

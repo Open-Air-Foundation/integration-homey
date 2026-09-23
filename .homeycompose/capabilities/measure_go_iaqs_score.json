@@ -1,0 +1,39 @@
+{
+  "type": "number",
+  "title": {
+    "en": "GO IAQS Score",
+    "nl": "GO IAQS-score",
+    "da": "GO IAQS-score",
+    "de": "GO-IAQS-Score",
+    "es": "Puntuación GO IAQS",
+    "fr": "Score GO IAQS",
+    "it": "Punteggio GO IAQS",
+    "no": "GO IAQS-score",
+    "sv": "GO IAQS-poäng",
+    "pl": "Wynik GO IAQS",
+    "ru": "Оценка GO IAQS",
+    "ko": "GO IAQS 점수"
+  },
+  "units": {
+    "en": "",
+    "nl": "",
+    "da": "",
+    "de": "",
+    "es": "",
+    "fr": "",
+    "it": "",
+    "no": "",
+    "sv": "",
+    "pl": "",
+    "ru": "",
+    "ko": ""
+  },
+  "decimals": 0,
+  "min": 0,
+  "max": 10,
+  "getable": true,
+  "setable": false,
+  "insights": true,
+  "uiComponent": "sensor",
+  "icon": "/assets/capabilities/measure_go_iaqs_score.svg"
+}

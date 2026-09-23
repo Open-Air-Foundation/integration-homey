@@ -16,7 +16,7 @@
   },
   "units": {
     "en": "ticks",
-    "nl": "tikken",
+    "nl": "ticks",
     "da": "tællinger",
     "de": "Zähler",
     "es": "tics",
@@ -33,5 +33,5 @@
   "setable": false,
   "insights": true,
   "uiComponent": "sensor",
-  "icon": "./assets/measure_voc.svg"
+  "icon": "/assets/capabilities/measure_voc.svg"
 }

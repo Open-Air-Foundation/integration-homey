@@ -1,0 +1,79 @@
+{
+  "id": "set_led_bar_brightness",
+  "platforms": [
+    "local"
+  ],
+  "title": {
+    "en": "Set LED bar brightness to [[brightness]]",
+    "nl": "Stel LED-balk helderheid in op [[brightness]]",
+    "da": "Indstil LED-bar lysstyrke til [[brightness]]",
+    "de": "LED-Leisten-Helligkeit auf [[brightness]] setzen",
+    "es": "Establecer brillo de barra LED en [[brightness]]",
+    "fr": "Définir la luminosité de la barre LED sur [[brightness]]",
+    "it": "Imposta luminosità barra LED su [[brightness]]",
+    "no": "Sett LED-bar lysstyrke til [[brightness]]",
+    "sv": "Ställ in LED-barens ljusstyrka till [[brightness]]",
+    "pl": "Ustaw jasność paska LED na [[brightness]]",
+    "ru": "Установить яркость LED-полосы на [[brightness]]",
+    "ko": "LED 바 밝기를 [[brightness]](으)로 설정"
+  },
+  "titleFormatted": {
+    "en": "Set LED bar brightness to [[brightness]]",
+    "nl": "Stel LED-balk helderheid in op [[brightness]]",
+    "da": "Indstil LED-bar lysstyrke til [[brightness]]",
+    "de": "LED-Leisten-Helligkeit auf [[brightness]] setzen",
+    "es": "Establecer brillo de barra LED en [[brightness]]",
+    "fr": "Définir la luminosité de la barre LED sur [[brightness]]",
+    "it": "Imposta luminosità barra LED su [[brightness]]",
+    "no": "Sett LED-bar lysstyrke til [[brightness]]",
+    "sv": "Ställ in LED-barens ljusstyrka till [[brightness]]",
+    "pl": "Ustaw jasność paska LED na [[brightness]]",
+    "ru": "Установить яркость LED-полосы на [[brightness]]",
+    "ko": "LED 바 밝기를 [[brightness]](으)로 설정"
+  },
+  "hint": {
+    "en": "Sets the Indoor Monitor LED bar brightness (0–100%).",
+    "nl": "Stelt de helderheid van de LED-balk van de Binnenmonitor in (0–100%).",
+    "da": "Indstiller Indendørs Monitorens LED-bar-lysstyrke (0–100%).",
+    "de": "Stellt die Helligkeit der LED-Leiste des Innenmonitors ein (0–100%).",
+    "es": "Establece el brillo de la barra LED del Monitor Interior (0–100%).",
+    "fr": "Définit la luminosité de la barre LED du Moniteur Intérieur (0–100 %).",
+    "it": "Imposta la luminosità della barra LED del Monitor Interno (0–100%).",
+    "no": "Angir lysstyrken på Innendørs Monitorens LED-bar (0–100%).",
+    "sv": "Anger ljusstyrkan på Inomhus Monitorns LED-bar (0–100%).",
+    "pl": "Ustawia jasność paska LED Monitora Wewnętrznego (0–100%).",
+    "ru": "Задаёт яркость LED-полосы Внутреннего Монитора (0–100%).",
+    "ko": "실내 모니터 LED 바 밝기를 설정합니다(0–100%)."
+  },
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "filter": "driver_id=indoor-local&capabilities=dim.led_bar"
+    },
+    {
+      "name": "brightness",
+      "type": "range",
+      "title": {
+        "en": "Brightness",
+        "nl": "Helderheid",
+        "da": "Lysstyrke",
+        "de": "Helligkeit",
+        "es": "Brillo",
+        "fr": "Luminosité",
+        "it": "Luminosità",
+        "no": "Lysstyrke",
+        "sv": "Ljusstyrka",
+        "pl": "Jasność",
+        "ru": "Яркость",
+        "ko": "밝기"
+      },
+      "min": 0,
+      "max": 1,
+      "step": 0.01,
+      "label": "%",
+      "labelMultiplier": 100,
+      "labelDecimals": 0
+    }
+  ]
+}

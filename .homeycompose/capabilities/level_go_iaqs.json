@@ -1,0 +1,74 @@
+{
+  "type": "enum",
+  "title": {
+    "en": "GO IAQS Level",
+    "nl": "GO IAQS-niveau",
+    "da": "GO IAQS-niveau",
+    "de": "GO-IAQS-Stufe",
+    "es": "Nivel GO IAQS",
+    "fr": "Niveau GO IAQS",
+    "it": "Livello GO IAQS",
+    "no": "GO IAQS-nivå",
+    "sv": "GO IAQS-nivå",
+    "pl": "Poziom GO IAQS",
+    "ru": "Уровень GO IAQS",
+    "ko": "GO IAQS 수준"
+  },
+  "values": [
+    {
+      "id": "good",
+      "title": {
+        "en": "Good",
+        "nl": "Goed",
+        "da": "God",
+        "de": "Gut",
+        "es": "Bueno",
+        "fr": "Bon",
+        "it": "Buono",
+        "no": "God",
+        "sv": "Bra",
+        "pl": "Dobry",
+        "ru": "Хороший",
+        "ko": "좋음"
+      }
+    },
+    {
+      "id": "moderate",
+      "title": {
+        "en": "Moderate",
+        "nl": "Matig",
+        "da": "Moderat",
+        "de": "Mäßig",
+        "es": "Moderado",
+        "fr": "Modéré",
+        "it": "Moderato",
+        "no": "Moderat",
+        "sv": "Måttlig",
+        "pl": "Umiarkowany",
+        "ru": "Умеренный",
+        "ko": "보통"
+      }
+    },
+    {
+      "id": "unhealthy",
+      "title": {
+        "en": "Unhealthy",
+        "nl": "Ongezond",
+        "da": "Usundt",
+        "de": "Ungesund",
+        "es": "Poco saludable",
+        "fr": "Malsain",
+        "it": "Insalubre",
+        "no": "Usunt",
+        "sv": "Ohälsosamt",
+        "pl": "Niezdrowy",
+        "ru": "Вредный",
+        "ko": "나쁨"
+      }
+    }
+  ],
+  "getable": true,
+  "setable": false,
+  "uiComponent": "sensor",
+  "icon": "/assets/capabilities/level_go_iaqs.svg"
+}

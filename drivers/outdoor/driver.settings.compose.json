@@ -33,7 +33,21 @@
           "ru": "IP-адрес",
           "ko": "IP 주소"
         },
-        "value": ""
+        "value": "",
+        "hint": {
+          "en": "The IP address of your AirGradient monitor on the local network.",
+          "nl": "Het IP-adres van je AirGradient-monitor op het lokale netwerk.",
+          "da": "IP-adressen på din AirGradient-monitor på det lokale netværk.",
+          "de": "Die IP-Adresse deines AirGradient-Monitors im lokalen Netzwerk.",
+          "es": "La dirección IP de tu monitor AirGradient en la red local.",
+          "fr": "L'adresse IP de ton moniteur AirGradient sur le réseau local.",
+          "it": "L'indirizzo IP del monitor AirGradient sulla rete locale.",
+          "no": "IP-adressen til AirGradient-monitoren på det lokale nettverket.",
+          "sv": "IP-adressen till din AirGradient-monitor på det lokala nätverket.",
+          "pl": "Adres IP monitora AirGradient w sieci lokalnej.",
+          "ru": "IP-адрес монитора AirGradient в локальной сети.",
+          "ko": "로컬 네트워크에서 AirGradient 모니터의 IP 주소입니다."
+        }
       },
       {
         "id": "pollingInterval",
@@ -139,13 +153,27 @@
               "ko": "5분"
             }
           }
-        ]
+        ],
+        "hint": {
+          "en": "How often Homey polls the monitor for new measurements. Shorter intervals provide fresher data but increase network traffic.",
+          "nl": "Hoe vaak Homey de monitor bevraagt voor nieuwe metingen. Kortere intervallen geven actuelere data, maar verhogen het netwerkverkeer.",
+          "da": "Hvor ofte Homey henter nye målinger fra monitoren. Kortere intervaller giver friskere data, men øger netværkstrafikken.",
+          "de": "Wie oft Homey den Monitor nach neuen Messwerten abfragt. Kürzere Intervalle liefern aktuellere Daten, erhöhen aber den Netzwerkverkehr.",
+          "es": "Con qué frecuencia Homey consulta el monitor para obtener nuevas mediciones. Intervalos más cortos ofrecen datos más recientes, pero aumentan el tráfico de red.",
+          "fr": "Fréquence à laquelle Homey interroge le moniteur pour de nouvelles mesures. Des intervalles plus courts donnent des données plus récentes, mais augmentent le trafic réseau.",
+          "it": "Frequenza con cui Homey interroga il monitor per nuove misurazioni. Intervalli più brevi forniscono dati più aggiornati, ma aumentano il traffico di rete.",
+          "no": "Hvor ofte Homey henter nye målinger fra monitoren. Kortere intervaller gir ferskere data, men øker nettverkstrafikken.",
+          "sv": "Hur ofta Homey hämtar nya mätningar från monitorn. Kortare intervall ger färskare data men ökar nätverkstrafiken.",
+          "pl": "Jak często Homey odpytuje monitor o nowe pomiary. Krótsze interwały dają świeższe dane, ale zwiększają ruch sieciowy.",
+          "ru": "Как часто Homey опрашивает монитор для получения новых измерений. Более короткие интервалы дают более свежие данные, но увеличивают сетевой трафик.",
+          "ko": "Homey가 모니터에서 새 측정값을 가져오는 주기입니다. 간격이 짧을수록 최신 데이터를 제공하지만 네트워크 트래픽이 증가합니다."
+        }
       },
       {
         "id": "postDataToAirGradient",
         "label": {
           "en": "Post Data To AirGradient",
-          "nl": "Post gegevens naar AirGradient",
+          "nl": "Gegevens naar AirGradient sturen",
           "da": "Send data til AirGradient",
           "de": "Daten an AirGradient senden",
           "es": "Enviar datos a AirGradient",
@@ -158,26 +186,54 @@
           "ko": "AirGradient에 데이터 게시"
         },
         "type": "checkbox",
-        "value": true
+        "value": true,
+        "hint": {
+          "en": "When enabled, the monitor sends measurement data to the AirGradient cloud for dashboards and data export. Disable for purely local operation.",
+          "nl": "Als dit is ingeschakeld, stuurt de monitor meetgegevens naar de AirGradient-cloud voor dashboards en data-export. Schakel uit voor puur lokale werking.",
+          "da": "Når aktiveret sender monitoren måledata til AirGradient-cloud til dashboards og dataeksport. Deaktiver for ren lokal drift.",
+          "de": "Wenn aktiviert, sendet der Monitor Messdaten an die AirGradient-Cloud für Dashboards und Datenexport. Deaktivieren für rein lokalen Betrieb.",
+          "es": "Si está habilitado, el monitor envía datos de medición a la nube de AirGradient para paneles y exportación de datos. Deshabilítalo para un funcionamiento puramente local.",
+          "fr": "Si activé, le moniteur envoie les données de mesure au cloud AirGradient pour les tableaux de bord et l'export de données. Désactive pour un fonctionnement purement local.",
+          "it": "Se abilitato, il monitor invia i dati di misurazione al cloud AirGradient per dashboard ed esportazione dati. Disabilita per un funzionamento puramente locale.",
+          "no": "Når aktivert sender monitoren måledata til AirGradient-skyen for dashboards og dataeksport. Deaktiver for ren lokal drift.",
+          "sv": "När aktiverat skickar monitorn mätdata till AirGradient-molnet för instrumentpaneler och dataexport. Inaktivera för ren lokal drift.",
+          "pl": "Po włączeniu monitor wysyła dane pomiarowe do chmury AirGradient dla pulpitów i eksportu danych. Wyłącz, aby działać wyłącznie lokalnie.",
+          "ru": "Если включено, монитор отправляет данные измерений в облако AirGradient для панелей и экспорта данных. Отключите для чисто локальной работы.",
+          "ko": "활성화하면 모니터가 측정 데이터를 AirGradient 클라우드로 전송하여 대시보드와 데이터보내기에 사용합니다. 순수 로컬 운영을 원하면 비활성화하세요."
+        }
       },
       {
-        "id": "co2CalibrationRequested",
-        "label": {
-          "en": "Request CO2 Calibration",
-          "nl": "Vraag CO2-calibratie aan",
-          "da": "Anmod om CO2-kalibrering",
-          "de": "CO2-Kalibrierung anfordern",
-          "es": "Solicitar calibración de CO2",
-          "fr": "Demander l'étalonnage du CO2",
-          "it": "Richiedi calibrazione CO2",
-          "no": "Be om CO2-kalibrering",
-          "sv": "Begär CO2-kalibrering",
-          "pl": "Zażądaj kalibracji CO2",
-          "ru": "Запросить калибровку CO2",
-          "ko": "CO2 보정 요청"
-        },
+        "id": "pm02_uses_corrected",
         "type": "checkbox",
-        "value": true
+        "value": true,
+        "label": {
+          "en": "Use corrected PM 2.5 values",
+          "nl": "Gebruik gecorrigeerde PM 2,5-waarden",
+          "da": "Brug korrigerede PM 2,5-værdier",
+          "de": "Korrigierte PM-2,5-Werte verwenden",
+          "es": "Usar valores corregidos de PM 2.5",
+          "fr": "Utiliser les valeurs corrigées de PM 2,5",
+          "it": "Usa valori corretti di PM 2,5",
+          "no": "Bruk korrigerte PM 2,5-verdier",
+          "sv": "Använd korrigerade PM 2,5-värden",
+          "pl": "Użyj skorygowanych wartości PM 2,5",
+          "ru": "Использовать скорректированные значения PM 2,5",
+          "ko": "보정된 PM 2.5 값 사용"
+        },
+        "hint": {
+          "en": "Compensated values apply AirGradient correction algorithms for more accurate PM2.5 readings. When disabled, raw sensor measurements are shown.",
+          "nl": "Gecompenseerde waarden gebruiken AirGradient-correctiealgoritmen voor nauwkeurigere PM2,5-metingen. Als dit is uitgeschakeld, worden ongecorrigeerde sensormetingen getoond.",
+          "da": "Kompenserede værdier anvender AirGradient-korrektionsalgoritmer for mere præcise PM2,5-aflæsninger. Når deaktiveret vises rå sensormålinger.",
+          "de": "Kompensierte Werte verwenden AirGradient-Korrekturalgorithmen für genauere PM2,5-Messwerte. Wenn deaktiviert, werden Rohsensorwerte angezeigt.",
+          "es": "Los valores compensados aplican algoritmos de corrección de AirGradient para lecturas de PM2.5 más precisas. Si está deshabilitado, se muestran mediciones en bruto del sensor.",
+          "fr": "Les valeurs compensées appliquent les algorithmes de correction AirGradient pour des lectures PM2,5 plus précises. Si désactivé, les mesures brutes du capteur sont affichées.",
+          "it": "I valori compensati applicano gli algoritmi di correzione AirGradient per letture PM2,5 più accurate. Se disabilitato, vengono mostrate le misurazioni grezze del sensore.",
+          "no": "Kompenserte verdier bruker AirGradient-korrigeringsalgoritmer for mer nøyaktige PM2,5-avlesninger. Når deaktivert vises rå sensormålinger.",
+          "sv": "Kompenserade värden använder AirGradients korrigeringsalgoritmer för mer exakta PM2,5-mätningar. När inaktiverat visas råa sensormätningar.",
+          "pl": "Skompensowane wartości stosują algorytmy korekcji AirGradient dla dokładniejszych odczytów PM2,5. Po wyłączeniu wyświetlane są surowe pomiary z czujnika.",
+          "ru": "Компенсированные значения применяют алгоритмы коррекции AirGradient для более точных показаний PM2,5. При отключении отображаются необработанные измерения датчика.",
+          "ko": "보정된 값은 AirGradient 보정 알고리즘을 적용해 더 정확한 PM2.5 측정값을 제공합니다. 비활성화하면 원시 센서 측정값이 표시됩니다."
+        }
       },
       {
         "id": "temperature_uses_corrected",
@@ -187,7 +243,7 @@
           "en": "Use corrected temperature values",
           "nl": "Gebruik gecorrigeerde temperatuurwaarden",
           "da": "Brug korrigerede temperaturværdier",
-          "de": "Verwenden Sie korrigierte Temperaturwerte",
+          "de": "Korrigierte Temperaturwerte verwenden",
           "es": "Usar valores corregidos de temperatura",
           "fr": "Utiliser les valeurs corrigées de température",
           "it": "Usa valori corretti di temperatura",
@@ -198,18 +254,18 @@
           "ko": "보정된 온도 값 사용"
         },
         "hint": {
-          "en": "By enabling this feature the correction algorithms provided by AirGradient will be used to correctly adjust the temperature values. When disabled raw measurements will be displayed.",
-          "nl": "Door deze functie in te schakelen, worden de correctie-algoritmen van AirGradient gebruikt om de temperatuurwaarden correct aan te passen. Wanneer uitgeschakeld, worden ruwe metingen weergegeven.",
-          "da": "Ved at aktivere denne funktion vil de korrektion algoritmer leveret af AirGradient blive brugt til at justere temperaturværdierne korrekt. Når deaktiveret, vises rå målinger.",
-          "de": "Durch Aktivieren dieser Funktion werden die von AirGradient bereitgestellten Korrekturalgorithmen verwendet, um die Temperaturwerte korrekt anzupassen. Wenn deaktiviert, werden Rohmessungen angezeigt.",
-          "es": "Al habilitar esta función, los algoritmos de corrección proporcionados por AirGradient se utilizarán para ajustar correctamente los valores de temperatura. Cuando está deshabilitado, se mostrarán las mediciones en bruto.",
-          "fr": "En activant cette fonctionnalité, les algorithmes de correction fournis par AirGradient seront utilisés pour ajuster correctement les valeurs de température. Lorsqu'elle est désactivée, les mesures brutes seront affichées.",
-          "it": "Abilitando questa funzione, gli algoritmi di correzione forniti da AirGradient verranno utilizzati per regolare correttamente i valori di temperatura. Quando disabilitato, verranno visualizzate le misurazioni grezze.",
-          "no": "Ved å aktivere denne funksjonen vil korrigeringsalgoritmene levert av AirGradient bli brukt til å justere temperaturverdiene riktig. Når deaktivert, vises råmålinger.",
-          "sv": "Genom att aktivera denna funktion kommer korrigeringsalgoritmerna som tillhandahålls av AirGradient att användas för att korrekt justera temperaturvärdena. När den är inaktiverad visas råa mätningar.",
-          "pl": "Włączając tę funkcję, algorytmy korekcji dostarczone przez AirGradient będą używane do prawidłowego dostosowania wartości temperatury. Gdy jest wyłączona, wyświetlane będą surowe pomiary.",
-          "ru": "Включив эту функцию, алгоритмы коррекции, предоставленные AirGradient, будут использоваться для правильной настройки значений температуры. При отключении будут отображаться необработанные измерения.",
-          "ko": "이 기능을 활성화하면 AirGradient에서 제공하는 보정 알고리즘을 사용하여 온도 값을 올바르게 조정합니다. 비활성화되면 원시 측정값이 표시됩니다."
+          "en": "Compensated values apply AirGradient correction algorithms for more accurate temperature readings. The Open Air outdoor monitor benefits from correction; the AirGradient ONE is typically accurate with raw data.",
+          "nl": "Gecompenseerde waarden gebruiken AirGradient-correctiealgoritmen voor nauwkeurigere temperatuurmetingen. De Open Air buitenmonitor profiteert van correctie; de AirGradient ONE is doorgaans nauwkeurig met ongecorrigeerde data.",
+          "da": "Kompenserede værdier anvender AirGradient-korrektionsalgoritmer for mere præcise temperaturaflæsninger. Open Air udendørsmonitoren drager fordel af korrektion; AirGradient ONE er typisk præcis med rå data.",
+          "de": "Kompensierte Werte verwenden AirGradient-Korrekturalgorithmen für genauere Temperaturmesswerte. Der Open Air Außenmonitor profitiert von der Korrektur; der AirGradient ONE ist typischerweise mit Rohdaten genau.",
+          "es": "Los valores compensados aplican algoritmos de corrección de AirGradient para lecturas de temperatura más precisas. El monitor exterior Open Air se beneficia de la corrección; el AirGradient ONE suele ser preciso con datos en bruto.",
+          "fr": "Les valeurs compensées appliquent les algorithmes de correction AirGradient pour des lectures de température plus précises. Le moniteur extérieur Open Air bénéficie de la correction ; l'AirGradient ONE est généralement précis avec des données brutes.",
+          "it": "I valori compensati applicano gli algoritmi di correzione AirGradient per letture di temperatura più accurate. Il monitor esterno Open Air beneficia della correzione; l'AirGradient ONE è in genere accurato con dati grezzi.",
+          "no": "Kompenserte verdier bruker AirGradient-korrigeringsalgoritmer for mer nøyaktige temperaturavlesninger. Open Air utendørsmonitor drar nytte av korreksjon; AirGradient ONE er vanligvis nøyaktig med rådata.",
+          "sv": "Kompenserade värden använder AirGradients korrigeringsalgoritmer för mer exakta temperaturmätningar. Open Air utomhusmonitorn drar nytta av korrigering; AirGradient ONE är vanligtvis noggrann med rådata.",
+          "pl": "Skompensowane wartości stosują algorytmy korekcji AirGradient dla dokładniejszych odczytów temperatury. Monitor zewnętrzny Open Air korzysta z korekcji; AirGradient ONE jest zwykle dokładny z danymi surowymi.",
+          "ru": "Компенсированные значения применяют алгоритмы коррекции AirGradient для более точных показаний температуры. Наружный монитор Open Air выигрывает от коррекции; AirGradient ONE обычно точен с необработанными данными.",
+          "ko": "보정된 값은 AirGradient 보정 알고리즘을 적용해 더 정확한 온도 측정값을 제공합니다. Open Air 실외 모니터는 보정의 이점이 있고, AirGradient ONE은 일반적으로 원시 데이터로도 정확합니다."
         }
       },
       {
@@ -220,7 +276,7 @@
           "en": "Use corrected humidity values",
           "nl": "Gebruik gecorrigeerde vochtigheidswaarden",
           "da": "Brug korrigerede fugtighedsværdier",
-          "de": "Verwenden Sie korrigierte Feuchtigkeitswerte",
+          "de": "Korrigierte Feuchtigkeitswerte verwenden",
           "es": "Usar valores corregidos de humedad",
           "fr": "Utiliser les valeurs corrigées d'humidité",
           "it": "Usa valori corretti di umidità",
@@ -231,18 +287,51 @@
           "ko": "보정된 습도 값 사용"
         },
         "hint": {
-          "en": "By enabling this feature the correction algorithms provided by AirGradient will be used to correctly adjust the humidity values. When disabled raw measurements will be displayed.",
-          "nl": "Door deze functie in te schakelen, worden de correctie-algoritmen van AirGradient gebruikt om de vochtigheidswaarden correct aan te passen. Wanneer uitgeschakeld, worden ruwe metingen weergegeven.",
-          "da": "Ved at aktivere denne funktion vil de korrektion algoritmer leveret af AirGradient blive brugt til at justere fugtighedsværdierne korrekt. Når deaktiveret, vises rå målinger.",
-          "de": "Durch Aktivieren dieser Funktion werden die von AirGradient bereitgestellten Korrekturalgorithmen verwendet, um die Feuchtigkeitswerte korrekt anzupassen. Wenn deaktiviert, werden Rohmessungen angezeigt.",
-          "es": "Al habilitar esta función, los algoritmos de corrección proporcionados por AirGradient se utilizarán para ajustar correctamente los valores de humedad. Cuando está deshabilitado, se mostrarán las mediciones en bruto.",
-          "fr": "En activant cette fonctionnalité, les algorithmes de correction fournis par AirGradient seront utilisés pour ajuster correctement les valeurs d'humidité. Lorsqu'elle est désactivée, les mesures brutes seront affichées.",
-          "it": "Abilitando questa funzione, gli algoritmi di correzione forniti da AirGradient verranno utilizzati per regolare correttamente i valori di umidità. Quando disabilitato, verranno visualizzate le misurazioni grezze.",
-          "no": "Ved å aktivere denne funksjonen vil korrigeringsalgoritmene levert av AirGradient bli brukt til å justere fuktighetsverdiene riktig. Når deaktivert, vises råmålinger.",
-          "sv": "Genom att aktivera denna funktion kommer korrigeringsalgoritmerna som tillhandahålls av AirGradient att användas för att korrekt justera fuktighetsvärdena. När den är inaktiverad visas råa mätningar.",
-          "pl": "Włączając tę funkcję, algorytmy korekcji dostarczone przez AirGradient będą używane do prawidłowego dostosowania wartości wilgotności. Gdy jest wyłączona, wyświetlane będą surowe pomiary.",
-          "ru": "Включив эту функцию, алгоритмы коррекции, предоставленные AirGradient, будут использоваться для правильной настройки значений влажности. При отключении будут отображаться необработанные измерения.",
-          "ko": "이 기능을 활성화하면 AirGradient에서 제공하는 보정 알고리즘을 사용하여 습도 값을 올바르게 조정합니다. 비활성화되면 원시 측정값이 표시됩니다."
+          "en": "Compensated values apply AirGradient correction algorithms for more accurate humidity readings. The Open Air outdoor monitor benefits from correction; the AirGradient ONE is typically accurate with raw data.",
+          "nl": "Gecompenseerde waarden gebruiken AirGradient-correctiealgoritmen voor nauwkeurigere vochtigheidsmetingen. De Open Air buitenmonitor profiteert van correctie; de AirGradient ONE is doorgaans nauwkeurig met ongecorrigeerde data.",
+          "da": "Kompenserede værdier anvender AirGradient-korrektionsalgoritmer for mere præcise fugtighedsaflæsninger. Open Air udendørsmonitoren drager fordel af korrektion; AirGradient ONE er typisk præcis med rå data.",
+          "de": "Kompensierte Werte verwenden AirGradient-Korrekturalgorithmen für genauere Feuchtigkeitsmesswerte. Der Open Air Außenmonitor profitiert von der Korrektur; der AirGradient ONE ist typischerweise mit Rohdaten genau.",
+          "es": "Los valores compensados aplican algoritmos de corrección de AirGradient para lecturas de humedad más precisas. El monitor exterior Open Air se beneficia de la corrección; el AirGradient ONE suele ser preciso con datos en bruto.",
+          "fr": "Les valeurs compensées appliquent les algorithmes de correction AirGradient pour des lectures d'humidité plus précises. Le moniteur extérieur Open Air bénéficie de la correction ; l'AirGradient ONE est généralement précis avec des données brutes.",
+          "it": "I valori compensati applicano gli algoritmi di correzione AirGradient per letture di umidità più accurate. Il monitor esterno Open Air beneficia della correzione; l'AirGradient ONE è in genere accurato con dati grezzi.",
+          "no": "Kompenserte verdier bruker AirGradient-korrigeringsalgoritmer for mer nøyaktige fuktighetsavlesninger. Open Air utendørsmonitor drar nytte av korreksjon; AirGradient ONE er vanligvis nøyaktig med rådata.",
+          "sv": "Kompenserade värden använder AirGradients korrigeringsalgoritmer för mer exakta fuktighetsmätningar. Open Air utomhusmonitorn drar nytta av korrigering; AirGradient ONE är vanligtvis noggrann med rådata.",
+          "pl": "Skompensowane wartości stosują algorytmy korekcji AirGradient dla dokładniejszych odczytów wilgotności. Monitor zewnętrzny Open Air korzysta z korekcji; AirGradient ONE jest zwykle dokładny z danymi surowymi.",
+          "ru": "Компенсированные значения применяют алгоритмы коррекции AirGradient для более точных показаний влажности. Наружный монитор Open Air выигрывает от коррекции; AirGradient ONE обычно точен с необработанными данными.",
+          "ko": "보정된 값은 AirGradient 보정 알고리즘을 적용해 더 정확한 습도 측정값을 제공합니다. Open Air 실외 모니터는 보정의 이점이 있고, AirGradient ONE은 일반적으로 원시 데이터로도 정확합니다."
+        }
+      },
+      {
+        "id": "applySunlightCompensation",
+        "type": "checkbox",
+        "value": false,
+        "label": {
+          "en": "Direct sunlight compensation (Experimental)",
+          "nl": "Compensatie voor direct zonlicht (Experimenteel)",
+          "da": "Kompensation for direkte sollys (Eksperimentel)",
+          "de": "Ausgleich bei direkter Sonneneinstrahlung (Experimentell)",
+          "es": "Compensación por luz solar directa (Experimental)",
+          "fr": "Compensation pour ensoleillement direct (Expérimental)",
+          "it": "Compensazione per luce solare diretta (Sperimentale)",
+          "no": "Kompensasjon for direkte sollys (Eksperimentell)",
+          "sv": "Kompensation för direkt solljus (Experimentell)",
+          "pl": "Kompensacja bezpośredniego nasłonecznienia (Eksperymentalne)",
+          "ru": "Компенсация прямого солнечного света (Экспериментально)",
+          "ko": "직사광선 보정 (실험적)"
+        },
+        "hint": {
+          "en": "Enable this if the monitor is mounted in direct sunlight. This reduces temperature errors caused by solar heating of the enclosure.\n\nThis feature is experimental and may change.",
+          "nl": "Schakel dit in als de monitor in direct zonlicht is geplaatst. Dit vermindert temperatuurfouten door opwarming van de behuizing.\n\nDeze functie is experimenteel en kan nog wijzigen.",
+          "da": "Aktivér dette, hvis monitoren er monteret i direkte sollys. Det reducerer temperaturfejl forårsaget af solopvarmning af kabinettet.\n\nDenne funktion er eksperimentel og kan ændre sig.",
+          "de": "Aktiviere dies, wenn der Monitor in direkter Sonne montiert ist. Dadurch werden Temperaturfehler durch Aufheizen des Gehäuses verringert.\n\nDiese Funktion ist experimentell und kann sich noch ändern.",
+          "es": "Actívalo si el monitor está montado a la luz solar directa. Reduce errores de temperatura por el calentamiento de la carcasa.\n\nEsta función es experimental y puede cambiar.",
+          "fr": "Activez cette option si le moniteur est exposé au soleil direct. Cela réduit les erreurs de température dues au chauffage du boîtier.\n\nCette fonctionnalité est expérimentale et peut évoluer.",
+          "it": "Abilita se il monitor è montato alla luce solare diretta. Riduce gli errori di temperatura causati dal riscaldamento dell'involucro.\n\nQuesta funzione è sperimentale e può cambiare.",
+          "no": "Aktiver dette hvis monitoren er montert i direkte sollys. Dette reduserer temperaturfeil forårsaket av soloppvarming av kabinettet.\n\nDenne funksjonen er eksperimentell og kan endre seg.",
+          "sv": "Aktivera detta om monitorn är monterad i direkt solljus. Det minskar temperaturfel orsakade av soluppvärmning av höljet.\n\nDen här funktionen är experimentell och kan komma att ändras.",
+          "pl": "Włącz, jeśli monitor jest zamontowany w bezpośrednim słońcu. Zmniejsza błędy temperatury spowodowane nagrzewaniem obudowy.\n\nTa funkcja jest eksperymentalna i może ulec zmianie.",
+          "ru": "Включите, если монитор установлен под прямыми солнечными лучами. Это снижает ошибки температуры из‑за нагрева корпуса.\n\nЭта функция экспериментальная и может измениться.",
+          "ko": "모니터가 직사광선에 설치된 경우 켭니다. 하우징 태양열로 인한 온도 오차를 줄입니다.\n\n이 기능은 실험적이며 변경될 수 있습니다."
         }
       }
     ]

@@ -1,0 +1,130 @@
+{
+  "id": "level_humidex_is",
+  "platforms": [
+    "local",
+    "cloud"
+  ],
+  "title": {
+    "en": "The Humidex comfort level !{{is|is not}}",
+    "nl": "Het Humidex-comfortniveau !{{is|is niet}}",
+    "da": "Humidex-komfortniveauet !{{er|er ikke}}",
+    "de": "Die Humidex-Komfortstufe !{{ist|ist nicht}}",
+    "es": "El nivel de confort de humidex !{{es|no es}}",
+    "fr": "Le niveau de confort humidex !{{est|n'est pas}}",
+    "it": "Il livello di comfort humidex !{{è|non è}}",
+    "no": "Humidex-komfortnivået !{{er|er ikke}}",
+    "sv": "Humidex-komfortnivån !{{är|är inte}}",
+    "pl": "Poziom komfortu humidex !{{to|nie to}}",
+    "ru": "Уровень комфорта по Humidex !{{|не}}",
+    "ko": "휴미덱스 쾌적 수준이 !{{|아님}}"
+  },
+  "titleFormatted": {
+    "en": "The Humidex comfort level is [[level]]",
+    "nl": "Het Humidex-comfortniveau is [[level]]",
+    "da": "Humidex-komfortniveauet er [[level]]",
+    "de": "Die Humidex-Komfortstufe ist [[level]]",
+    "es": "El nivel de confort de humidex es [[level]]",
+    "fr": "Le niveau de confort humidex est [[level]]",
+    "it": "Il livello di comfort humidex è [[level]]",
+    "no": "Humidex-komfortnivået er [[level]]",
+    "sv": "Humidex-komfortnivån är [[level]]",
+    "pl": "Poziom komfortu humidex to [[level]]",
+    "ru": "Уровень комфорта по Humidex [[level]]",
+    "ko": "휴미덱스 쾌적 수준이 [[level]]"
+  },
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "filter": "driver_id=indoor-local|outdoor-local|indoor-cloud|outdoor-cloud&capabilities=level_humidex"
+    },
+    {
+      "name": "level",
+      "type": "dropdown",
+      "title": {
+        "en": "Humidex Level",
+        "nl": "Humidex-niveau",
+        "da": "Humidex-niveau",
+        "de": "Humidex-Stufe",
+        "es": "Nivel de humidex",
+        "fr": "Niveau d'humidex",
+        "it": "Livello humidex",
+        "no": "Humidex-nivå",
+        "sv": "Humidex-nivå",
+        "pl": "Poziom humidex",
+        "ru": "Уровень хумидекса",
+        "ko": "휴미덱스 수준"
+      },
+      "values": [
+        {
+          "id": "little_discomfort",
+          "title": {
+            "en": "Little discomfort",
+            "nl": "Weinig ongemak",
+            "da": "Lidt ubehag",
+            "de": "Geringes Unbehagen",
+            "es": "Poco malestar",
+            "fr": "Peu d'inconfort",
+            "it": "Poco disagio",
+            "no": "Lite ubehag",
+            "sv": "Litet obehag",
+            "pl": "Niewielki dyskomfort",
+            "ru": "Небольшой дискомфорт",
+            "ko": "가벼운 불쾌함"
+          }
+        },
+        {
+          "id": "some_discomfort",
+          "title": {
+            "en": "Some discomfort",
+            "nl": "Enig ongemak",
+            "da": "Noget ubehag",
+            "de": "Leichtes Unbehagen",
+            "es": "Algo de malestar",
+            "fr": "Inconfort léger",
+            "it": "Qualche disagio",
+            "no": "Noe ubehag",
+            "sv": "Visst obehag",
+            "pl": "Pewien dyskomfort",
+            "ru": "Некоторый дискомфорт",
+            "ko": "약간 불쾌함"
+          }
+        },
+        {
+          "id": "great_discomfort",
+          "title": {
+            "en": "Great discomfort",
+            "nl": "Groot ongemak",
+            "da": "Stort ubehag",
+            "de": "Starkes Unbehagen",
+            "es": "Gran malestar",
+            "fr": "Inconfort important",
+            "it": "Grande disagio",
+            "no": "Stort ubehag",
+            "sv": "Stort obehag",
+            "pl": "Duży dyskomfort",
+            "ru": "Сильный дискомфорт",
+            "ko": "매우 불쾌함"
+          }
+        },
+        {
+          "id": "dangerous",
+          "title": {
+            "en": "Dangerous",
+            "nl": "Gevaarlijk",
+            "da": "Farligt",
+            "de": "Gefährlich",
+            "es": "Peligroso",
+            "fr": "Dangereux",
+            "it": "Pericoloso",
+            "no": "Farlig",
+            "sv": "Farligt",
+            "pl": "Niebezpiecznie",
+            "ru": "Опасно",
+            "ko": "위험함"
+          }
+        }
+      ]
+    }
+  ]
+}

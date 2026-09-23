@@ -1,11 +1,95 @@
 {
-  "device": {
-      "save": "Apparaat aanmaken",
-      "saving": "Apparaat verifiëren",
-      "failed": "Apparaatverificatie mislukt",
-      "create": "Verbind met een AirGradient-apparaat",
-      "ipAddress": "Apparaat IP-adres",
-      "ipAddressHelp": "Dit is het unieke IP-adres van je AirGradient-apparaat.",
-      "ipAddressRequired": "Geef het IP-adres van je AirGradient-apparaat op."
-  }
+    "device": {
+        "save": "Apparaat aanmaken",
+        "saving": "Apparaat verifiëren",
+        "failed": "Apparaatverificatie mislukt",
+        "create": "Verbind met een AirGradient-apparaat",
+        "ipAddress": "Apparaat IP-adres",
+        "ipAddressHelp": "Dit is het unieke IP-adres van je AirGradient-apparaat.",
+        "ipAddressRequired": "Geef het IP-adres van je AirGradient-apparaat op.",
+        "pair": {
+            "list": {
+                "add_by_ip": "Toevoegen via IP…"
+            },
+            "device_ip": {
+                "title": "Verbind met je AirGradient-apparaat",
+                "addressLabel": "IP-adres of hostnaam",
+                "addressPlaceholder": "192.168.0.1 of airgradient.local",
+                "connect": "Verbinden"
+            },
+            "apikey": {
+                "title": "Verbind met je AirGradient-apparaat",
+                "intro": "Om AirGradient via de cloud-API te verbinden, heb je een place API-token nodig.",
+                "tokenLabel": "API-token",
+                "continue": "Doorgaan",
+                "stepOpen": "Open het <a id=\"ag-link\" href=\"javascript:void(0);\" target=\"_blank\">AirGradient Dashboard</a>.",
+                "stepSettings": "Open <strong>General Settings</strong> → <strong>Connectivity</strong>.",
+                "stepToken": "Schakel <strong>API access</strong> in, kopieer het token en plak het hieronder."
+            }
+        },
+        "repair": {
+            "device_ip": {
+                "title": "Apparaat repareren",
+                "serialLabel": "Serienummer",
+                "serialPlaceholder": "Laden...",
+                "addressLabel": "IP-adres of hostnaam",
+                "addressPlaceholder": "192.168.0.1 of airgradient.local",
+                "connect": "Verbinden",
+                "errorRetrievingSerial": "Fout bij ophalen van serienummer"
+            },
+            "apikey": {
+                "title": "Apparaat repareren"
+            }
+        }
+    },
+    "errors": {
+        "deviceUnreachableAt": "Apparaat is niet bereikbaar op __ipAddress__",
+        "setDeviceConfigFailed": "Kan de configuratie van het AirGradient-apparaat niet bijwerken.",
+        "cloudTokenNotConfigured": "Cloud API-token is niet geconfigureerd voor deze locatie.",
+        "cloudUnreachable": "De AirGradient cloud-API is niet bereikbaar.",
+        "co2CalibrationNoToken": "Cloud API-token is niet geconfigureerd; CO₂-kalibratie kan niet worden gestart.",
+        "co2CalibrationFailed": "Kan CO₂-kalibratie niet starten via de AirGradient cloud-API.",
+        "co2CalibrationInProgress": "CO₂-kalibratie is recent aangevraagd voor dit apparaat. Wacht ongeveer __minutes__ minuut/minuten voordat je het opnieuw probeert.",
+        "ledBarTestFailed": "Kan de LED-balk test op dit apparaat niet starten.",
+        "tokenNotValidated": "Het API-token is nog niet gevalideerd.",
+        "tokenRequired": "Een API-token is vereist.",
+        "tokenInvalid": "Ongeldig API-token of de locatie kon niet worden bepaald.",
+        "noLocations": "Geen locaties gevonden voor dit API-token.",
+        "deviceNotFound": "Kon geen verbinding maken met een AirGradient-apparaat op dat adres.",
+        "wrongDevice": "Het adres dat je hebt ingevoerd hoort bij een ander AirGradient-apparaat.",
+        "cloudTokenRejected": "Het AirGradient API-token is geweigerd. Gebruik Repareren om een nieuw token in te voeren.",
+        "tokenPlaceMismatch": "Dit API-token hoort bij een locatie waar dit apparaat niet in staat."
+    },
+    "notifications": {
+        "driver_deprecated": "De driver voor __device__ is verouderd. Verwijder dit apparaat en voeg het opnieuw toe zodat het de nieuwe driver gebruikt.",
+        "co2_calibration_started": "CO₂-kalibratie gestart op __device__. Meetwaarden zouden binnen ongeveer 10 minuten rond 400 ppm moeten stabiliseren.",
+        "co2_calibration_finished": "CO₂-kalibratie op __device__ zou nu klaar moeten zijn. De monitor zou rond 400 ppm moeten aangeven.",
+        "metrics": {
+            "pm1": "PM1",
+            "pm25": "PM2.5",
+            "pm10": "PM10",
+            "tvoc": "TVOC",
+            "nox": "NOx",
+            "co2": "CO₂",
+            "humidex": "Humidex",
+            "aqi": "AQI",
+            "go_iaqs": "GO IAQS"
+        },
+        "levels": {
+            "low": "Laag",
+            "medium": "Gemiddeld",
+            "high": "Hoog",
+            "critical": "Kritiek",
+            "good": "Goed",
+            "moderate": "Matig",
+            "unhealthy_sensitive": "Ongezond voor gevoelige groepen",
+            "unhealthy": "Ongezond",
+            "very_unhealthy": "Zeer ongezond",
+            "hazardous": "Gevaarlijk",
+            "little_discomfort": "Weinig ongemak",
+            "some_discomfort": "Enig ongemak",
+            "great_discomfort": "Groot ongemak",
+            "dangerous": "Gevaarlijk"
+        }
+    }
 }

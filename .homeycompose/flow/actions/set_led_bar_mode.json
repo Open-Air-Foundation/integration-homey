@@ -1,0 +1,126 @@
+{
+  "id": "set_led_bar_mode",
+  "platforms": [
+    "local"
+  ],
+  "title": {
+    "en": "Set LED bar mode to [[mode]]",
+    "nl": "Stel LED-balk modus in op [[mode]]",
+    "da": "Indstil LED-bar tilstand til [[mode]]",
+    "de": "LED-Leisten-Modus auf [[mode]] setzen",
+    "es": "Establecer modo de barra LED en [[mode]]",
+    "fr": "Définir le mode barre LED sur [[mode]]",
+    "it": "Imposta modalità barra LED su [[mode]]",
+    "no": "Sett LED-bar modus til [[mode]]",
+    "sv": "Ställ in LED-barens läge till [[mode]]",
+    "pl": "Ustaw tryb paska LED na [[mode]]",
+    "ru": "Установить режим LED-полосы на [[mode]]",
+    "ko": "LED 바 모드를 [[mode]](으)로 설정"
+  },
+  "titleFormatted": {
+    "en": "Set LED bar mode to [[mode]]",
+    "nl": "Stel LED-balk modus in op [[mode]]",
+    "da": "Indstil LED-bar tilstand til [[mode]]",
+    "de": "LED-Leisten-Modus auf [[mode]] setzen",
+    "es": "Establecer modo de barra LED en [[mode]]",
+    "fr": "Définir le mode barre LED sur [[mode]]",
+    "it": "Imposta modalità barra LED su [[mode]]",
+    "no": "Sett LED-bar modus til [[mode]]",
+    "sv": "Ställ in LED-barens läge till [[mode]]",
+    "pl": "Ustaw tryb paska LED na [[mode]]",
+    "ru": "Установить режим LED-полосы на [[mode]]",
+    "ko": "LED 바 모드를 [[mode]](으)로 설정"
+  },
+  "hint": {
+    "en": "Sets whether the Indoor Monitor LED bar shows CO₂, particulate matter, or is off.",
+    "nl": "Stelt in of de LED-balk van de Binnenmonitor CO₂, fijnstof toont, of uit staat.",
+    "da": "Indstiller om Indendørs Monitorens LED-bar viser CO₂, partikler eller er slukket.",
+    "de": "Legt fest, ob die LED-Leiste des Innenmonitors CO₂, Feinstaub anzeigt oder aus ist.",
+    "es": "Define si la barra LED del Monitor Interior muestra CO₂, material particulado o está apagada.",
+    "fr": "Définit si la barre LED du Moniteur Intérieur affiche le CO₂, les particules ou est éteinte.",
+    "it": "Imposta se la barra LED del Monitor Interno mostra CO₂, particolato o è spenta.",
+    "no": "Angir om Innendørs Monitorens LED-bar viser CO₂, partikler eller er av.",
+    "sv": "Anger om Inomhus Monitorns LED-bar visar CO₂, partiklar eller är av.",
+    "pl": "Ustawia, czy pasek LED Monitora Wewnętrznego pokazuje CO₂, pył zawieszony, czy jest wyłączony.",
+    "ru": "Задаёт, показывает ли LED-полоса Внутреннего Монитора CO₂, частицы или выключена.",
+    "ko": "실내 모니터 LED 바가 CO₂, 미세먼지를 표시할지 또는 끌지 설정합니다."
+  },
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "filter": "driver_id=indoor-local&capabilities=led_bar_mode"
+    },
+    {
+      "name": "mode",
+      "type": "dropdown",
+      "title": {
+        "en": "Mode",
+        "nl": "Modus",
+        "da": "Tilstand",
+        "de": "Modus",
+        "es": "Modo",
+        "fr": "Mode",
+        "it": "Modalità",
+        "no": "Modus",
+        "sv": "Läge",
+        "pl": "Tryb",
+        "ru": "Режим",
+        "ko": "모드"
+      },
+      "values": [
+        {
+          "id": "co2",
+          "title": {
+            "en": "CO₂",
+            "nl": "CO₂",
+            "da": "CO₂",
+            "de": "CO₂",
+            "es": "CO₂",
+            "fr": "CO₂",
+            "it": "CO₂",
+            "no": "CO₂",
+            "sv": "CO₂",
+            "pl": "CO₂",
+            "ru": "CO₂",
+            "ko": "CO₂"
+          }
+        },
+        {
+          "id": "pm",
+          "title": {
+            "en": "Particulate matter",
+            "nl": "Fijnstof",
+            "da": "Partikler",
+            "de": "Feinstaub",
+            "es": "Material particulado",
+            "fr": "Matières particulaires",
+            "it": "Particolato",
+            "no": "Partikler",
+            "sv": "Partiklar",
+            "pl": "Pył zawieszony",
+            "ru": "Взвешенные частицы",
+            "ko": "미세먼지"
+          }
+        },
+        {
+          "id": "off",
+          "title": {
+            "en": "Off",
+            "nl": "Uit",
+            "da": "Fra",
+            "de": "Aus",
+            "es": "Apagado",
+            "fr": "Éteint",
+            "it": "Spento",
+            "no": "Av",
+            "sv": "Av",
+            "pl": "Wyłączone",
+            "ru": "Выкл.",
+            "ko": "끄기"
+          }
+        }
+      ]
+    }
+  ]
+}

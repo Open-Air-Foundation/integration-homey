@@ -1,0 +1,63 @@
+{
+  "id": "measure_absolute_humidity_changed",
+  "platforms": [
+    "local",
+    "cloud"
+  ],
+  "title": {
+    "en": "The absolute humidity changed",
+    "nl": "De absolute vochtigheid is veranderd",
+    "da": "Den absolutte fugtighed ændrede sig",
+    "de": "Die absolute Feuchte hat sich geändert",
+    "es": "La humedad absoluta ha cambiado",
+    "fr": "L'humidité absolue a changé",
+    "it": "L'umidità assoluta è cambiata",
+    "no": "Den absolutte fuktigheten ble endret",
+    "sv": "Den absoluta fuktigheten ändrades",
+    "pl": "Zmiana wilgotności bezwzględnej",
+    "ru": "Абсолютная влажность изменилась",
+    "ko": "절대 습도가 변경되면"
+  },
+  "titleFormatted": {
+    "en": "The absolute humidity changed",
+    "nl": "De absolute vochtigheid is veranderd",
+    "da": "Den absolutte fugtighed ændrede sig",
+    "de": "Die absolute Feuchte hat sich geändert",
+    "es": "La humedad absoluta ha cambiado",
+    "fr": "L'humidité absolue a changé",
+    "it": "L'umidità assoluta è cambiata",
+    "no": "Den absolutte fuktigheten ble endret",
+    "sv": "Den absoluta fuktigheten ändrades",
+    "pl": "Zmiana wilgotności bezwzględnej",
+    "ru": "Абсолютная влажность изменилась",
+    "ko": "절대 습도가 변경되면"
+  },
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "filter": "driver_id=indoor-local|outdoor-local|indoor-cloud|outdoor-cloud&capabilities=measure_absolute_humidity"
+    }
+  ],
+  "tokens": [
+    {
+      "name": "measure_absolute_humidity",
+      "title": {
+        "en": "Absolute Humidity",
+        "nl": "Absolute vochtigheid",
+        "da": "Absolut fugtighed",
+        "de": "Absolute Feuchte",
+        "es": "Humedad absoluta",
+        "fr": "Humidité absolue",
+        "it": "Umidità assoluta",
+        "no": "Absolutt fuktighet",
+        "sv": "Absolut fuktighet",
+        "pl": "Wilgotność bezwzględna",
+        "ru": "Абсолютная влажность",
+        "ko": "절대 습도"
+      },
+      "type": "number",
+      "example": 10.5
+    }
+  ]
+}

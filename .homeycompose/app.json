@@ -1,10 +1,11 @@
 {
   "id": "com.airgradient",
-  "version": "1.2.0",
-  "compatibility": ">=5.0.0",
+  "version": "2.0.0",
+  "compatibility": ">=12.3.0",
   "sdk": 3,
   "platforms": [
-    "local"
+    "local",
+    "cloud"
   ],
   "name": {
     "en": "AirGradient",
@@ -22,18 +23,18 @@
   },
   "brandColor": "#1a75bd",
   "description": {
-    "en": "Monitoring your indoor and outdoor air quality.",
-    "nl": "Monitoring van jouw binnen- en buitenluchtkwaliteit.",
-    "da": "Overvågning af din indendørs og udendørs luftkvalitet.",
-    "de": "Überwachung Ihrer Innen- und Außenluftqualität.",
-    "es": "Monitoreo de la calidad del aire interior y exterior.",
-    "fr": "Surveillance de la qualité de l'air intérieur et extérieur.",
-    "it": "Monitoraggio della qualità dell'aria interna ed esterna.",
-    "no": "Overvåking av din innendørs og utendørs luftkvalitet.",
-    "sv": "Övervakning av din inomhus- och utomhusluftkvalitet.",
-    "pl": "Monitorowanie jakości powietrza w pomieszczeniach i na zewnątrz.",
-    "ru": "Мониторинг качества воздуха в помещении и на улице.",
-    "ko": "실내 및 실외 공기질 모니터링."
+    "en": "Join Us in the Fight Against Air Pollution",
+    "nl": "Doe met ons mee in de strijd tegen luchtvervuiling",
+    "da": "Vær med os i kampen mod luftforurening",
+    "de": "Mach mit im Kampf gegen die Luftverschmutzung",
+    "es": "Únete a la lucha contra la contaminación del aire",
+    "fr": "Rejoignez-nous dans la lutte contre la pollution de l'air",
+    "it": "Unisciti a noi nella lotta contro l'inquinamento atmosferico",
+    "no": "Bli med oss i kampen mot luftforurensning",
+    "sv": "Var med oss i kampen mot luftföroreningar",
+    "pl": "Dołącz do nas w walce z zanieczyszczeniem powietrza",
+    "ru": "Присоединяйтесь к нам в борьбе с загрязнением воздуха",
+    "ko": "대기오염과의 싸움에 함께해 주세요"
   },
   "category": [
     "climate"
@@ -232,18 +233,31 @@
       "압력"
     ]
   },
-  "permissions": [],
   "images": {
     "small": "/assets/images/small.png",
     "large": "/assets/images/large.png"
   },
   "author": {
-    "name": "Grant Slender",
-    "email": "gslender@gmail.com"
+    "name": "AirGradient Co. Ltd.",
+    "email": "abe.haverkamp+airgradient@homey.app"
   },
-  "source": "https://github.com/airgradienthq/airgradient-homey",
-  "support": "https://github.com/airgradienthq/airgradient-homey",
+  "contributors": {
+    "developers": [
+      {
+        "name": "Grant Slender (developer)"
+      },
+      {
+        "name": "Abe Haverkamp (developer)"
+      },
+      {
+        "name": "Bas van der Ploeg (icons)"
+      }
+    ]
+  },
+  "source": "https://github.com/Open-Air-Foundation/integration-homey",
+  "support": "https://github.com/Open-Air-Foundation/integration-homey/issues",
   "bugs": {
-    "url": "https://github.com/airgradienthq/airgradient-homey/issues"
-  }
+    "url": "https://github.com/Open-Air-Foundation/integration-homey/issues"
+  },
+  "homeyCommunityTopicId": 143075
 }
